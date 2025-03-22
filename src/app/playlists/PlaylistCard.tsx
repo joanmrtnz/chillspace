@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import SavePlaylistButton from "../../components/SavePlaylistButton";
 import { FaSpotify, FaYoutube} from "react-icons/fa";
 
 export default function PlaylistCard({ title, image, spotifyLink, youtubeLink }: { title: string; image: string; spotifyLink: string; youtubeLink: string }) {
@@ -14,6 +17,7 @@ export default function PlaylistCard({ title, image, spotifyLink, youtubeLink }:
         <Link href={youtubeLink} target="_blank" className="text-red-500 hover:text-red-400 text-2xl">
           <FaYoutube />
         </Link>
+        <SavePlaylistButton/>
       </div>
     </div>
   );

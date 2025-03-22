@@ -3,9 +3,10 @@ import { moods } from "../moods";
 import PlaylistCard from "../PlaylistCard";
 import { notFound } from "next/navigation";
 
-export default function Playlists({ params }: { params: { mood: string } }) {
-  const mood = moods.find((m) => m.id === params.mood);
+export default function Playlists({ params }: { params: { mood?: string } }) {
+  if (!params?.mood) return notFound();
 
+  const mood = moods.find((m) => m.id === params.mood);
   if (!mood) return notFound();
 
   return (
@@ -15,6 +16,8 @@ export default function Playlists({ params }: { params: { mood: string } }) {
           🡠
         </button>
       </Link>
+
+
 
       <div className="flex flex-col items-center">
         <h1 className="text-3xl font-bold mt-10">{mood.emoji} {mood.name}</h1>
