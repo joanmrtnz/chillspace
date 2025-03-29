@@ -5,7 +5,7 @@ import Link from "next/link";
 import SavePlaylistButton from "../../components/SavePlaylistButton";
 import { FaSpotify, FaYoutube} from "react-icons/fa";
 
-export default function PlaylistCard({ title, image, spotifyLink, youtubeLink }: { title: string; image: string; spotifyLink: string; youtubeLink: string }) {
+export default function PlaylistCard({ title, image, spotifyLink, youtubeLink, uris }: { title: string; image: string; spotifyLink: string; youtubeLink: string, uris: string[] }) {
   return (
     <div className="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
       <Image src={image} alt={title} width={200} height={200} className="rounded-lg mx-auto" />
@@ -17,7 +17,7 @@ export default function PlaylistCard({ title, image, spotifyLink, youtubeLink }:
         <Link href={youtubeLink} target="_blank" className="text-red-500 hover:text-red-400 text-2xl">
           <FaYoutube />
         </Link>
-        <SavePlaylistButton/>
+        <SavePlaylistButton playlistName={title} uris={uris}/>
       </div>
     </div>
   );

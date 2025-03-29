@@ -1,0 +1,134 @@
+[
+    {
+      "id": "happy",
+      "emoji": "😃",
+      "name": "Feliz",
+      "playlists": [
+        {
+          "id": 1,
+          "title": "Vibes Felices",
+          "image": "/happy1.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/XYZ",
+          "youtubeLink": "https://www.youtube.com/watch?v=ABC",
+          "uris": [
+            "spotify:track:4cOdK2wGLETKBW3PvgPWqT",
+            "spotify:track:7GhIk7Il098yCjg4BQjzvb"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Buen Rollo",
+          "image": "/happy2.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/XYZ2",
+          "youtubeLink": "https://www.youtube.com/watch?v=DEF",
+          "uris": [
+            "spotify:track:5nTtCOCds6I0PHMNtqelas",
+            "spotify:track:2Fxmhks0bxGSBdJ92vM42m"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Sonrisas Musicales",
+          "image": "/happy3.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/XYZ3",
+          "youtubeLink": "https://www.youtube.com/watch?v=GHI",
+          "uris": [
+            "spotify:track:6v8j7k2wGLETKBW3PvgPWqT",
+            "spotify:track:7GhIk7Il098yCjg4BQjzvb"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Fiesta Total",
+          "image": "/happy4.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/XYZ4",
+          "youtubeLink": "https://www.youtube.com/watch?v=JKL",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relaxed",
+      "emoji": "🌿",
+      "name": "Relajado",
+      "playlists": [
+        {
+          "id": 4,
+          "title": "Paz Mental",
+          "image": "/relaxed1.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Zen Total",
+          "image": "/relaxed1.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Sueños Sonoros",
+          "image": "/relaxed2.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sad",
+      "emoji": "😢",
+      "name": "Triste",
+      "playlists": [
+        {
+          "id": 7,
+          "title": "Lágrimas Sonoras",
+          "image": "/sad1.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Melancolía",
+          "image": "/sad2.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Soledad",
+          "image": "/relaxed2.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        }
+      ]
+    }
+  ]
+  

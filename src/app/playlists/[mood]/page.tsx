@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { moods } from "../moods";
+import  moods from "../../../lib/spotify/moods";
 import PlaylistCard from "../PlaylistCard";
 import { notFound } from "next/navigation";
 
@@ -29,6 +29,7 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
             image={playlist.image} 
             spotifyLink={playlist.spotifyLink} 
             youtubeLink={playlist.youtubeLink} 
+            uris={playlist.uris}
           />
         ))}
         </div>

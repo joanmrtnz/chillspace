@@ -1,9 +1,8 @@
-
 import { NextRequest, NextResponse } from "next/server";
-import { cookies } from "next/headers"; 
-import { savePlaylistFlow } from "../../../lib/spotify/playlists"; 
+import { cookies } from "next/headers";
+import { savePlaylistFlow } from "../../../lib/spotify/playlists";
 
-export async function GET(req: NextRequest) {
+export async function POST(req: NextRequest) {
   const cookieStore = cookies();
   const accessToken = (await cookieStore).get("spotify_access_token")?.value;
 
@@ -11,12 +10,20 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "No hay token de Spotify" }, { status: 401 });
   }
 
+  let body;
   try {
-    const playlistId = await savePlaylistFlow(accessToken, "Chill Space Mood", [
-      "spotify:track:4cOdK2wGLETKBW3PvgPWqT",
-      "spotify:track:7GhIk7Il098yCjg4BQjzvb",
-    ]);
+    body = await req.json();
+  } catch (error) {
+    return NextResponse.json({ error: "Error al leer el cuerpo de la solicitud" }, { status: 400 });
+  }
 
+  const { playlistName, uris } = body;
+  if (!playlistName || !uris || !Array.isArray(uris)) {
+    return NextResponse.json({ error: "Faltan parámetros: playlistName y uris deben estar definidos" }, { status: 400 });
+  }
+
+  try {
+    const playlistId = await savePlaylistFlow(accessToken, playlistName, uris);
     return NextResponse.json({ success: true, playlistId });
   } catch (err) {
     console.error("Error al guardar la playlist:", err);

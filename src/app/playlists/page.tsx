@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { moods } from "./moods";
+import  moods  from "../../lib/spotify/moods";
 
 export default function MoodSelector() {
   const router = useRouter();
