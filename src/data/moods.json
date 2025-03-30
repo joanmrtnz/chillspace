@@ -7,7 +7,7 @@
         {
           "id": 1,
           "title": "Vibes Felices",
-          "image": "/happy1.jpg",
+          "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
           "spotifyLink": "https://open.spotify.com/playlist/XYZ",
           "youtubeLink": "https://www.youtube.com/watch?v=ABC",
           "uris": [
@@ -18,7 +18,7 @@
         {
           "id": 2,
           "title": "Buen Rollo",
-          "image": "/happy2.jpg",
+          "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
           "spotifyLink": "https://open.spotify.com/playlist/XYZ2",
           "youtubeLink": "https://www.youtube.com/watch?v=DEF",
           "uris": [
@@ -29,23 +29,12 @@
         {
           "id": 3,
           "title": "Sonrisas Musicales",
-          "image": "/happy3.jpg",
+          "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
           "spotifyLink": "https://open.spotify.com/playlist/XYZ3",
           "youtubeLink": "https://www.youtube.com/watch?v=GHI",
           "uris": [
             "spotify:track:6v8j7k2wGLETKBW3PvgPWqT",
             "spotify:track:7GhIk7Il098yCjg4BQjzvb"
-          ]
-        },
-        {
-          "id": 4,
-          "title": "Fiesta Total",
-          "image": "/happy4.jpg",
-          "spotifyLink": "https://open.spotify.com/playlist/XYZ4",
-          "youtubeLink": "https://www.youtube.com/watch?v=JKL",
-          "uris": [
-            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
-            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
           ]
         }
       ]
@@ -58,7 +47,7 @@
         {
           "id": 4,
           "title": "Paz Mental",
-          "image": "/relaxed1.jpg",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
           "uris": [
@@ -69,7 +58,7 @@
         {
           "id": 5,
           "title": "Zen Total",
-          "image": "/relaxed1.jpg",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
           "uris": [
@@ -80,7 +69,7 @@
         {
           "id": 6,
           "title": "Sueños Sonoros",
-          "image": "/relaxed2.jpg",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
           "uris": [
@@ -98,7 +87,7 @@
         {
           "id": 7,
           "title": "Lágrimas Sonoras",
-          "image": "/sad1.jpg",
+          "image": "https://i1.sndcdn.com/artworks-000555002412-054ojp-t500x500.jpg",
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
           "uris": [
@@ -109,7 +98,7 @@
         {
           "id": 8,
           "title": "Melancolía",
-          "image": "/sad2.jpg",
+          "image": "https://i1.sndcdn.com/artworks-000555002412-054ojp-t500x500.jpg",
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
           "uris": [
@@ -120,7 +109,7 @@
         {
           "id": 9,
           "title": "Soledad",
-          "image": "/relaxed2.jpg",
+          "image": "https://i1.sndcdn.com/artworks-000555002412-054ojp-t500x500.jpg",
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
           "uris": [

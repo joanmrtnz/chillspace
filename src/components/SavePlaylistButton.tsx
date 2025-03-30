@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { FaSpotify } from "react-icons/fa";
 
 export default function SavePlaylistButton({ playlistName, uris }: { playlistName: string; uris: string[] }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -38,11 +39,12 @@ export default function SavePlaylistButton({ playlistName, uris }: { playlistNam
   return (
     <div>
       <button
-        onClick={handleSaveClick}
-        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
-      >
-        Guardar Playlist en Spotify
-      </button>
+          onClick={handleSaveClick}
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          <div className="flex gap-1 font-bold justify-center"> + <FaSpotify className="mt-1" /></div>
+        </button>
+
 
       {showLoginDialog && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
