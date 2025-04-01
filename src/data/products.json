@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "title": "Silla Chill",
+      "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+      "productLink": "https://open.spotify.com/playlist/XYZ",
+      "description": "Silla cómoda para relajarte mientras trabajas.",
+      "price": "$120"
+    },
+    {
+      "id": 2,
+      "title": "Lámpara Ambient",
+      "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+      "productLink": "https://open.spotify.com/playlist/XYZ",
+      "description": "Ilumina tu espacio con una luz suave y relajante.",
+      "price": "$80"
+    },
+    {
+      "id": 3,
+      "title": "Alfombra Zen",
+      "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+      "productLink": "https://open.spotify.com/playlist/XYZ",
+      "description": "Una alfombra que invita a la calma y al confort.",
+      "price": "$95"
+    },
+    {
+        "id": 4,
+        "title": "Silla Chill",
+        "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+        "productLink": "https://open.spotify.com/playlist/XYZ",
+        "description": "Silla cómoda para relajarte mientras trabajas.",
+        "price": "$120"
+      },
+      {
+        "id": 5,
+        "title": "Lámpara Ambient",
+        "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+        "productLink": "https://open.spotify.com/playlist/XYZ",
+        "description": "Ilumina tu espacio con una luz suave y relajante.",
+        "price": "$80"
+      },
+      {
+        "id": 6,
+        "title": "Alfombra Zen",
+        "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+        "productLink": "https://open.spotify.com/playlist/XYZ",
+        "description": "Una alfombra que invita a la calma y al confort.",
+        "price": "$95"
+      },
+      {
+        "id": 7,
+        "title": "Silla Chill",
+        "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+        "productLink": "https://open.spotify.com/playlist/XYZ",
+        "description": "Silla cómoda para relajarte mientras trabajas.",
+        "price": "$120"
+      },
+      {
+        "id": 8,
+        "title": "Lámpara Ambient",
+        "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+        "productLink": "https://open.spotify.com/playlist/XYZ",
+        "description": "Ilumina tu espacio con una luz suave y relajante.",
+        "price": "$80"
+      },
+      {
+        "id": 9,
+        "title": "Alfombra Zen",
+        "image": "https://media.adeo.com/media/3387438/media.jpeg?precrop=4729,4173,x1167,y294&width=680&quality=75&width=640",
+        "productLink": "https://open.spotify.com/playlist/XYZ",
+        "description": "Una alfombra que invita a la calma y al confort.",
+        "price": "$95"
+      }
+  ]

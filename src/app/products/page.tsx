@@ -1,4 +1,50 @@
-export default function Products() {
-    return <h1 className="text-3xl font-bold text-center mt-10">Productos Chill</h1>;
-  }
-  
+"use client";
+
+import { useState } from "react";
+import products from "../../lib/products/products";
+import ProductCard from "@/app/products/ProductCard";
+
+export default function ProductsPage() {
+  const itemsPerPage = 6; 
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentProducts = products.slice(startIndex, endIndex);
+  return (
+    <div className="p-4">
+      <h1 className="text-3xl font-bold mb-6 text-center">Productos Chill</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {currentProducts.map((product) => (
+          <ProductCard
+            key={product.id}
+            title={product.title}
+            image={product.image}
+            productLink={product.productLink}
+            description={product.description}
+            price={product.price}
+          />
+        ))}
+      </div>
+       <div className="flex justify-center gap-4 mt-8">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+        >
+          Anterior
+        </button>
+        <span className="text-white">{currentPage} de {totalPages}</span>
+        <button
+          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          disabled={currentPage === totalPages}
+          className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+        >
+          Siguiente
+        </button>
+      </div>
+    </div>
+  );
+}
