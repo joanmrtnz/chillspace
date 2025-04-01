@@ -10,9 +10,9 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
   if (!mood) return notFound();
 
   return (
-    <div className="relative min-h-screen bg-gray-900 text-white">
+    <div className="md:mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4" >
       <Link href="/playlists">
-        <button className="absolute top-4 left-4 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition">
+        <button className="absolute top-25 left-10 text-[var(--white)] p-3 hover:bg-[var(--dark-navy)] rounded-lg  transition">
           🡠
         </button>
       </Link>
@@ -20,7 +20,7 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
 
 
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl font-bold mt-10">{mood.emoji} {mood.name}</h1>
+        <h1 className="text-3xl font-bold mt-10">{mood.name}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full max-w-4xl">
         {mood.playlists.map((playlist) => (
           <PlaylistCard 

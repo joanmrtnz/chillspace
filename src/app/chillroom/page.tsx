@@ -1,4 +1,4 @@
 export default function ChillRoom() {
-    return <h1 className="text-3xl font-bold text-center mt-10">Chill Room</h1>;
+    return  <div id="chill-room" className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left px-6 md:px-20 m-auto bg-[var(--navy)]"><h1>Chill Room</h1></div>;;
   }
   

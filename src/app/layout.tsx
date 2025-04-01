@@ -9,9 +9,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen bg-gray-900 text-white flex flex-col">
+        <div className="min-h-screen bg-[var(--navy)]">
           <Header />
-          <main className="p-6">{children}</main>
+          <main className="px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">{children}</main>
         </div>
       </body>
     </html>

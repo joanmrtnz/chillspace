@@ -1,7 +1,7 @@
 [
     {
       "id": "happy",
-      "emoji": "😃",
+      "emoji": "/icons/happy.png",
       "name": "Feliz",
       "playlists": [
         {
@@ -41,7 +41,7 @@
     },
     {
       "id": "relaxed",
-      "emoji": "🌿",
+      "emoji": "/icons/relaxed.png",
       "name": "Relajado",
       "playlists": [
         {
@@ -81,7 +81,7 @@
     },
     {
       "id": "sad",
-      "emoji": "😢",
+      "emoji": "/icons/sad.png",
       "name": "Triste",
       "playlists": [
         {

@@ -14,7 +14,7 @@ export default function ProductsPage() {
   const endIndex = startIndex + itemsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
   return (
-    <div className="p-4">
+    <div className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left px-6 md:px-20 m-auto bg-[var(--navy)] p-4">
       <h1 className="text-3xl font-bold mb-6 text-center">Productos Chill</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentProducts.map((product) => (
@@ -32,15 +32,15 @@ export default function ProductsPage() {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+          className="px-4 py-2 bg-[var(--lightest-slate)] text-white rounded disabled:opacity-50"
         >
           Anterior
         </button>
-        <span className="text-white">{currentPage} de {totalPages}</span>
+        <span >{currentPage} de {totalPages}</span>
         <button
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
+          className="px-4 py-2 bg-[var(--lightest-slate)] text-white rounded disabled:opacity-50"
         >
           Siguiente
         </button>

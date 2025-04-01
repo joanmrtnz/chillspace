@@ -40,9 +40,9 @@ export default function SavePlaylistButton({ playlistName, uris }: { playlistNam
     <div>
       <button
           onClick={handleSaveClick}
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+          className="flex items-center rounded-lg bg-teal-400/10 px-3 hover:bg-teal-700/10 py-2 hover:text-[var(--green)] py-1 text-xl font-medium leading-5 text-[var(--light-green)]"
         >
-          <div className="flex gap-1 font-bold justify-center"> + <FaSpotify className="mt-1" /></div>
+          <div className=" flex gap-1 font-bold justify-center"> + <FaSpotify className="mt-1" /></div>
         </button>
 
 
