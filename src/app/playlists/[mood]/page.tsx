@@ -20,8 +20,9 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
 
 
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl font-bold mt-10">{mood.name}</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full max-w-4xl">
+        {/* <h1 className="text-3xl font-bold mt-8 mb-5">{mood.name}</h1> */}
+        {/* <img src={mood.emoji} className="w-[2.5rem]"/> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8 w-full max-w-4xl">
         {mood.playlists.map((playlist) => (
           <PlaylistCard 
             key={playlist.id} 
