@@ -38,6 +38,8 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
                 <PlaylistCard 
                   title={playlist.title}
                   image={playlist.image}
+                  description={playlist.description}
+                  genres={playlist.genres}
                   spotifyLink={playlist.spotifyLink}
                   youtubeLink={playlist.youtubeLink}
                   uris={playlist.uris}

@@ -8,17 +8,20 @@ import { FaSpotify, FaYoutube } from "react-icons/fa";
 export default function PlaylistCard({
   title,
   image,
+  description,
+  genres,
   spotifyLink,
   youtubeLink,
   uris,
 }: {
   title: string
   image: string
+  description: string
+  genres: string[]
   spotifyLink: string
   youtubeLink: string
   uris: string[]
 }) {
-  const genres = ["Pop", "Dance", "Electrónica"];
 
   return (
     <div className="w-full backdrop-blur-lg bg-[var(--white)]/5 rounded-xl p-4 sm:p-10
@@ -33,7 +36,7 @@ export default function PlaylistCard({
 
       <h2 className="text-lg text-[var(--slate)] font-bold mt-4">{title}</h2>   
       <p className="mt-2 text-sm text-[var(--lightest-slate)]">
-        Selección de temas para elevar tu ánimo y disfrutar de la música.
+        {description}
       </p>
 
       <div className="mt-3 flex flex-wrap gap-2">
