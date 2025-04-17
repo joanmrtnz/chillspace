@@ -36,6 +36,39 @@
             "spotify:track:6v8j7k2wGLETKBW3PvgPWqT",
             "spotify:track:7GhIk7Il098yCjg4BQjzvb"
           ]
+        },
+         {
+          "id": 7,
+          "title": "Lágrimas Sonoras",
+          "image": "https://i1.sndcdn.com/artworks-000555002412-054ojp-t500x500.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Melancolía",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Soledad",
+          "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
+          "spotifyLink": "https://open.spotify.com/playlist/JKL",
+          "youtubeLink": "https://www.youtube.com/watch?v=MNO",
+          "uris": [
+            "spotify:track:3n3Ppam7vgaVa1iaRUc9Lp",
+            "spotify:track:1p1n1zVAw8NJ4n4TuP0ZBc"
+          ]
         }
       ]
     },
