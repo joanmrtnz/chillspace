@@ -13,7 +13,9 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
   const mood = moods.find((m) => m.id === params.mood);
   if (!mood) return notFound();
 
-  const itemsPerPage = 3;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+  const itemsPerPage = isMobile ? 1 : 3;
+
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(mood.playlists.length / itemsPerPage);
 
