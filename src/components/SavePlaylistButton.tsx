@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaSpotify } from "react-icons/fa";
+import { IoAddCircle } from "react-icons/io5";
+
 
 export default function SavePlaylistButton({ playlistName, uris }: { playlistName: string; uris: string[] }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -38,12 +39,12 @@ export default function SavePlaylistButton({ playlistName, uris }: { playlistNam
 
   return (
     <div>
-      <button
-          onClick={handleSaveClick}
-          className="flex items-center rounded-lg bg-teal-400/10 px-3 hover:bg-teal-700/10 py-2 hover:text-[var(--green)] py-1 text-xl font-medium leading-5 text-[var(--light-green)]"
-        >
-          <div className=" flex gap-1 font-bold justify-center"> + <FaSpotify className="mt-1" /></div>
-        </button>
+      <button 
+      onClick={handleSaveClick}
+      className="flex items-center rounded-lg bg-teal-400/10 px-3 py-1 hover:bg-teal-700/10 hover:text-[var(--green)] text-xl font-medium leading-5 text-[var(--light-green)]">
+        <IoAddCircle className="m-1"/>
+        <p className="text-xs text-[var(--lightest-slate)]">Guardar en Spotify</p>
+      </button>
 
 
       {showLoginDialog && (

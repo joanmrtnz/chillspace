@@ -10,22 +10,25 @@ export default function PlaylistCard({ title, image, spotifyLink, youtubeLink, u
     <div className="w-full backdrop-blur-lg bg-[var(--white)]/5 rounded-xl p-4 sm:p-10 shadow-lg">
       <img src={image} alt={title} width={200} height={200} className="w-full rounded-md mx-auto" />
       <h2 className="text-lg text-[var(--slate)] font-bold mt-4">{title}</h2>
-      <div className="flex flex-col md:flex-row justify-center gap-5 mt-5">
-        <div className="flex-1">
+      <div className="flex flex-col justify-center gap-3 mt-8">
+        <div className="flex-1 flex flex-row items-center gap-2">
           <Link href={youtubeLink} target="_blank" className="text-red-500 hover:text-red-400">
-          <button className="flex items-center rounded-lg bg-teal-400/10 px-3 hover:bg-teal-700/10 px-3 hover:text-[var(--green)] py-1 text-xl font-medium leading-5 text-[var(--light-green)]">
+          <button className="flex items-center rounded-lg bg-teal-400/10 hover:bg-teal-700/10 px-3 hover:text-[var(--green)] py-1 text-xl font-medium leading-5 text-[var(--light-green)]">
               <FaYoutube className="m-1" />
+              <p className="ml-3 text-xs text-[var(--lightest-slate)]">Ver en youtube</p>
             </button>
           </Link>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-row items-center gap-2">
           <Link href={spotifyLink} target="_blank" className="text-green-400 hover:text-green-300">
-            <button className="flex items-center rounded-lg bg-teal-400/10 px-3 hover:bg-teal-700/10 px-3 hover:text-[var(--green)] py-1 text-xl font-medium leading-5 text-[var(--light-green)]">
+            <button className="flex items-center rounded-lg bg-teal-400/10 hover:bg-teal-700/10 px-3 hover:text-[var(--green)] py-1 text-xl font-medium leading-5 text-[var(--light-green)]">
               <FaSpotify className="m-1" />
+              <p className="ml-3 text-xs text-[var(--lightest-slate)]">Escuchar en Spotify</p>
             </button>
           </Link>
+          
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-row items-center gap-2">
           <SavePlaylistButton playlistName={title} uris={uris} />
         </div>
       </div>
