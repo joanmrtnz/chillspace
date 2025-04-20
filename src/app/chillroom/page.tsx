@@ -1,4 +1,17 @@
-export default function ChillRoom() {
-    return  <div id="chill-room" className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left px-6 md:px-20 m-auto bg-[var(--navy)]"><h1>Chill Room</h1></div>;;
+  "use client";
+  import  Player  from "lottie-react";
+  import campfireAnimation from "@/data/animations/ejemplo2.json";
+
+  export default function ChillRoomPage() {
+    return (
+        <div className="w-screen h-screen md:w-full md:h-full flex items-center justify-center overflow-hidden transform origin-center 
+              md:rotate-0 rotate-90">
+        <Player
+          autoplay
+          loop
+          animationData={campfireAnimation}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
+    );
   }
-  
