@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import products from "../../lib/products/products";
 import ProductCard from "@/app/products/ProductCard";
 
@@ -8,6 +8,11 @@ export default function ProductsPage() {
   const itemsPerPage = 9; 
   const [currentPage, setCurrentPage] = useState(1);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage]);
+
+  
   const totalPages = Math.ceil(products.length / itemsPerPage);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
