@@ -4,9 +4,8 @@ import { useState, useEffect } from "react";
 import { IoAddCircle } from "react-icons/io5";
 
 
-export default function SavePlaylistButton({ playlistName, uris }: { playlistName: string; uris: string[] }) {
+export default function SavePlaylistButton({ playlistName, uris, onRequireLogin }: { playlistName: string; uris: string[], onRequireLogin: () => void; }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [showLoginDialog, setShowLoginDialog] = useState(false);
 
   useEffect(() => {
     async function checkAuth() {
@@ -33,7 +32,7 @@ export default function SavePlaylistButton({ playlistName, uris }: { playlistNam
         alert("Error al guardar la playlist");
       }
     } else {
-      setShowLoginDialog(true);
+      onRequireLogin(); 
     }
   };
 
@@ -45,31 +44,6 @@ export default function SavePlaylistButton({ playlistName, uris }: { playlistNam
         <IoAddCircle className="m-1"/>
         <p className="text-xs text-[var(--lightest-slate)]">Guardar en Spotify</p>
       </button>
-
-
-      {showLoginDialog && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded shadow-lg text-black">
-            <p>No estás autenticado en Spotify. ¿Deseas iniciar sesión?</p>
-            <div className="mt-4 flex justify-end gap-2">
-              <button
-                onClick={() => setShowLoginDialog(false)}
-                className="px-3 py-2 border rounded"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={() => {
-                  window.location.href = "/spotify-login";
-                }}
-                className="px-3 py-2 bg-green-500 text-white rounded"
-              >
-                Iniciar sesión
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

@@ -7,26 +7,27 @@ import { notFound } from "next/navigation";
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+
+
+
 export default function Playlists({ params }: { params: { mood?: string } }) {
   if (!params?.mood) return notFound();
-
   const mood = moods.find((m) => m.id === params.mood);
   if (!mood) return notFound();
 
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
-  const itemsPerPage = isMobile ? 1 : 3;
-
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(mood.playlists.length / itemsPerPage);
+  const [showLoginDialog, setShowLoginDialog] = useState(false);
+  const totalPages = Math.ceil(mood.playlists.length / (window.innerWidth < 640 ? 1 : 3));
 
   return (
-    <div className="md:mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4">
+    <div className="relative md:mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4">
       <Link href="/playlists">
-        <button className="absolute top-25 left-10 text-[var(--white)] p-3 hover:bg-[var(--dark-navy)] rounded-lg transition">
-         <FaArrowLeft />
+        <button className="absolute top-10 left-4 text-[var(--white)] p-3 hover:bg-[var(--dark-navy)] rounded-lg transition">
+          <FaArrowLeft />
         </button>
       </Link>
 
+      
       <div className="flex flex-col items-center w-full">
         <div className="relative w-full max-w-4xl overflow-hidden">
           <div
@@ -35,36 +36,53 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
           >
             {mood.playlists.map((playlist) => (
               <div key={playlist.id} className="flex-none w-full sm:w-1/3 px-2">
-                <PlaylistCard 
-                  title={playlist.title}
-                  image={playlist.image}
-                  description={playlist.description}
-                  genres={playlist.genres}
-                  spotifyLink={playlist.spotifyLink}
-                  youtubeLink={playlist.youtubeLink}
-                  uris={playlist.uris}
+                
+                <PlaylistCard
+                  {...playlist}
+                  onRequireLogin={() => setShowLoginDialog(true)}
                 />
               </div>
             ))}
           </div>
-
+          
           <button
-            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
             disabled={currentPage === 1}
-            className="absolute left-[-4px] top-1/2 transform -translate-y-1/2 text-[var(--green)] p-1  rounded-md disabled:opacity-50"
+            className="absolute left-0 top-1/2 -translate-y-1/2 text-[var(--green)] p-1 rounded-md disabled:opacity-50"
           >
             <FaArrowLeft />
           </button>
-          
           <button
-            onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="absolute right-[-4px] top-1/2 transform -translate-y-1/2 text-[var(--green)] p-1  rounded-md disabled:opacity-50"
+            className="absolute right-0 top-1/2 -translate-y-1/2 text-[var(--green)] p-1 rounded-md disabled:opacity-50"
           >
             <FaArrowRight />
           </button>
         </div>
       </div>
+
+      {showLoginDialog && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded shadow-lg text-black">
+            <p>No estás autenticado en Spotify. ¿Deseas iniciar sesión?</p>
+            <div className="mt-4 flex justify-end gap-2">
+              <button
+                onClick={() => setShowLoginDialog(false)}
+                className="px-3 py-2 border rounded"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={() => (window.location.href = "/spotify-login")}
+                className="px-3 py-2 bg-green-500 text-white rounded"
+              >
+                Iniciar sesión
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
