@@ -5,7 +5,7 @@ import products from "../../lib/products/products";
 import ProductCard from "@/app/products/ProductCard";
 
 export default function ProductsPage() {
-  const itemsPerPage = 6; 
+  const itemsPerPage = 9; 
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(products.length / itemsPerPage);
