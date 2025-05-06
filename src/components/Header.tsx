@@ -7,7 +7,7 @@ export default function Header() {
 
         <header className="bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] ">
             <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
-                <Link href="/"><h1 className="text-md">Chill Space</h1></Link>
+                <Link href="/"><img src="/chillspace-logo.png" className="h-[8rem] md:h-[10rem] "/></Link>
                 <ul className="hidden md:flex items-center space-x-4 ml-auto ">
                     <Link href="/playlists" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Playlists</Link>
                     <Link href="/chillroom" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Chill Room</Link>
