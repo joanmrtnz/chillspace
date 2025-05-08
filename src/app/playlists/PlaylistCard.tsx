@@ -27,14 +27,14 @@ export default function PlaylistCard({
 
   return (
     <div className="w-full backdrop-blur-lg bg-[var(--white)]/5 rounded-xl p-4 sm:p-10
-                    shadow-lg ">
-      <img
-        src={image}
-        alt={title}
-        className="w-full rounded-md mx-auto"
-        width={200}
-        height={200}
-      />
+                    shadow-lg group">
+      <div className="overflow-hidden rounded-md mb-3"> 
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-[200px] object-cover transform transition-transform duration-300 group-hover:scale-105 rounded-md mx-auto"
+        />
+      </div>
 
       <h2 className="text-lg text-[var(--slate)] font-bold mt-4">{title}</h2>   
       <p className="mt-2 text-sm text-[var(--lightest-slate)]">
