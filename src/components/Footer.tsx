@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-        <footer className="relative bg-[var(--navy)] text-[var(--light-slate)] py-8 sm:py-10 flex flex-col items-center text-center border-t border-t-[var(--dark-navy)]">
+        <footer className="relative bg-[var(--blue-slate)]/10 bg-opacity-30 text-[var(--light-slate)] py-8 sm:py-10 flex flex-col items-center text-center border-t border-t-[var(--dark-navy)]">
             <div className="w-full max-w-5xl flex flex-col sm:flex-row justify-around items-start px-4 mb-6">
 
                 <div className="flex-1 min-w-[150px] mb-6 sm:mb-0 text-left">
@@ -62,7 +62,7 @@ export default function Footer() {
             </div>
 
             <div className="text-sm mb-4 mt-4">
-                © 2025 Chill Space. Todos los derechos reservados.
+                © 2025 chillspace. Todos los derechos reservados.
             </div>
 
 
