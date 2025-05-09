@@ -20,7 +20,7 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
   const totalPages = Math.ceil(mood.playlists.length / (window.innerWidth < 640 ? 1 : 3));
 
   return (
-    <div className="relative md:mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4">
+    <div className="relative md:mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
       <Link href="/playlists">
         <button className="absolute top-10 left-4 text-[var(--white)] p-3 hover:bg-[var(--dark-navy)] rounded-lg transition">
           <FaArrowLeft />

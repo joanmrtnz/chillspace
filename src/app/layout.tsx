@@ -12,7 +12,7 @@ export default function RootLayout({
       <body>
         <div className="min-h-screen bg-[var(--navy)]">
           <Header />
-          <main className="px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">{children}</main>
+          <main className="">{children}</main>
           <Footer/> 
         </div>
       </body>

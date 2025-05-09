@@ -19,7 +19,7 @@ export default function ProductsPage() {
   const endIndex = startIndex + itemsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
   return (
-    <div className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left px-6 md:px-20 m-auto bg-[var(--navy)] p-4">
+    <div className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left m-auto bg-[var(--navy)] p-4 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
       <h1 className="text-3xl font-bold mb-6 text-center">Productos Chill</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {currentProducts.map((product) => (
