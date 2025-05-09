@@ -1,3 +1,49 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Home() {
-  return     <div id="home" className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left px-6 md:px-20 m-auto bg-[var(--navy)]"><h1>Inicio</h1></div>;
+  return (
+    <div className="relative min-h-screen bg-black">
+      <Image
+        src="/images/home.jpg"             
+        alt="mountain"
+        fill
+        className="object-cover"
+        priority
+      />
+
+      <div className="absolute inset-0 bg-white/20" />
+
+      <div className="relative z-10 flex flex-col items-start justify-center h-screen px-6 md:px-20">
+        <h1 className="text-5xl md:text-6xl font-bold text-[var(--text-color)] mb-4">
+          Bienvenido a <span className="text-[var(--text-color)]/70">chillspace</span>
+        </h1>
+        <p className="font-mono text-lg md:text-xl text-[var(--lightest-slate)] mb-8 max-w-lg">
+          Tu refugio digital para relajarte, descubrir música y desconectar.
+        </p>
+
+        <nav className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+          {[
+            { label: "Playlists", href: "/playlists" },
+            { label: "Productos",  href: "/products" },
+            { label: "Chill Room", href: "/chillroom" },
+            { label: "Proposito de la web", href: "/about" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="bg-white/30 hover:bg-white/10 hover:text-[var(--slate)] text-[var(--lightest-slate)] px-4 py-2 rounded-md transition"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="absolute bottom-10 animate-bounce">
+          <span className="block w-8 h-1 bg-white mb-2 rounded" />
+          <span className="block w-4 h-1 bg-white rounded" />
+        </div>
+      </div>
+    </div>
+  );
 }
