@@ -9,10 +9,10 @@ export default function AboutPage() {
             <div className="max-w-4xl w-full grid gap-12 md:grid-cols-2 items-center">
                 <div className="space-y-8">
                     <h1 className="text-4xl font-bold">Sobre <span className="text-[var(--text-color)]/70">chillspace</span></h1>
-                    <p className="text-base leading-relaxed">
+                    <div className="text-base leading-relaxed">
                         🍵 chillspace es un proyecto personal para demostrar mis habilidades como
                         desarrollador web:
-
+                    
                         <ol className="font-mono list-disc text-md text-[var(--lightest-slate)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-300">
                             <li>Next.js</li>
                             <li>APIs (Spotify)</li>
@@ -22,7 +22,7 @@ export default function AboutPage() {
 
                         <br />
                         Todo diseñado para ofrecer una experiencia <span className="font-bold text-[var(--text-color)]/50">relajante</span>.
-                    </p>
+                    </div>
 
                     <div className="bg-white/20 text-[var(--lightest-slate)] px-4 py-6 rounded-md transition space-y-6">
                         <p className="text-base leading-relaxed">
