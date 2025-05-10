@@ -1,7 +1,7 @@
 export default function ChillRoomPage() {
 
   return (
-    <div className="md:min-h-screen min-h-[80vh] flex flex-col  justify-center  px-6  m-auto bg-[var(--navy)] p-4">
+    <div className="md:min-h-screen min-h-[80vh] flex flex-col  justify-center  px-6  m-auto p-4">
       <div className="flex items-center justify-center font-roboto">
         <div className="relative w-[200px] h-[200px] border border-[var(--navy-shadow)]  flex items-center justify-center">
           <div
