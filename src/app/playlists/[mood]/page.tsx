@@ -22,7 +22,7 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
   return (
     <div className="relative md:mt-[30px] min-h-screen flex items-center justify-center px-4 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
       <Link href="/playlists">
-        <button className="absolute top-10 left-4 text-[var(--white)] p-3 hover:bg-[var(--dark-navy)] rounded-lg transition">
+        <button className="absolute top-10 left-4 text-[var(--color-black)] p-3 hover:bg-[var(--color-gray-200)] rounded-lg transition">
           <FaArrowLeft />
         </button>
       </Link>
@@ -48,14 +48,14 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
           <button
             onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
             disabled={currentPage === 1}
-            className="absolute left-0 top-1/2 -translate-y-1/2 text-[var(--green)] p-1 rounded-md disabled:opacity-50"
+            className="absolute left-0 top-1/2 -translate-y-1/2 text-[var(--color-green-500)] p-1 rounded-md disabled:opacity-50"
           >
             <FaArrowLeft />
           </button>
           <button
             onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="absolute right-0 top-1/2 -translate-y-1/2 text-[var(--green)] p-1 rounded-md disabled:opacity-50"
+            className="absolute right-0 top-1/2 -translate-y-1/2 text-[var(--color-green-500)] p-1 rounded-md disabled:opacity-50"
           >
             <FaArrowRight />
           </button>

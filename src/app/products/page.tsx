@@ -37,16 +37,16 @@ export default function ProductsPage() {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className="px-4 py-2 text-[var(--green)] hover:bg-teal-700/10  border border-[var(--green)] rounded disabled:opacity-50"
+          className="px-4 py-2 text-[var(--color-green-500)] hover:bg-teal-700/10  border border-[var(--color-green-500)] rounded disabled:opacity-50"
         >
           Anterior
         </button>
        
-        <span className="text-sm px-2 py-2 text-[var(--light-slate)]">{currentPage} de {totalPages}</span>
+        <span className="text-sm px-2 py-2 text-[var(--color-slate-500)]">{currentPage} de {totalPages}</span>
         <button
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 text-[var(--green)] hover:bg-teal-700/10  border border-[var(--green)] rounded disabled:opacity-50"
+          className="px-4 py-2 text-[var(--color-green-500)] hover:bg-teal-700/10  border border-[var(--color-green-500)] rounded disabled:opacity-50"
         >
           Siguiente
         </button>

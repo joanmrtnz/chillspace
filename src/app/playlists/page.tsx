@@ -12,7 +12,7 @@ export default function MoodSelector() {
         {moods.map((mood) => (
           <button
             key={mood.id}
-            className="text-6xl p-6 rounded-full hover:bg-[var(--navy-shadow)] bg-[var(--dark-navy)] transition"
+            className="text-6xl p-6 rounded-full hover:bg-[var(--shadow-gray)] bg-[var(--color-gray-200)] transition"
             onClick={() => router.push(`/playlists/${mood.id}`)}
           >
             <img src={mood.emoji} className="w-[3rem]"/>
