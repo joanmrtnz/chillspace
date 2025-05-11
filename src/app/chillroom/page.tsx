@@ -5,10 +5,10 @@ export default function ChillRoomPage() {
       <div className="flex items-center justify-center font-roboto">
         <div className="relative w-[200px] h-[200px] border border-[var(--shadow-gray)]  flex items-center justify-center">
           <div
-            className="absolute -top-[5px] -left-[5px] w-[10px] h-[10px] rounded-full bg-[var(--color-green-500)] shadow-[0_0_10px_7px_rgba(60,179,113,0.8)] animate-breathe"/>
+            className="absolute -top-[5px] -left-[5px] w-[10px] h-[10px] rounded-full bg-[var(--color-text-primary_50)] shadow-[0_0_10px_7px_rgba(33,53,71,0.3)] animate-breathe"/>
           <div
-            className="flex items-center justify-center  text-white bg-[var(--color-green-500)]/80 
-                   text-[1.5em] w-[125px] h-[125px] animate-expand overflow-hidden">
+            className="flex items-center justify-center  text-white bg-[var(--color-text-primary_50)]
+                   text-[1.25em] w-[125px] h-[125px] animate-expand overflow-hidden">
             <span className="absolute text-transparent animate-words1">Inspira</span>
             <span className="absolute text-transparent animate-words2">Aguanta</span>
             <span className="absolute text-transparent animate-words3">Expira</span>
