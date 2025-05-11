@@ -19,8 +19,8 @@ export default function ProductsPage() {
   const endIndex = startIndex + itemsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
   return (
-    <div className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-start justify-center text-left m-auto p-4 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
-      <h1 className="text-3xl font-bold mb-6 text-center">Productos Chill</h1>
+    <div className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-center justify-center text-left m-auto p-4 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
+      <h1 className="text-3xl font-bold mb-6 text-center">Productos</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {currentProducts.map((product) => (
           <ProductCard
@@ -37,7 +37,9 @@ export default function ProductsPage() {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className="px-4 py-2 text-[var(--color-green-500)] hover:bg-teal-700/10  border border-[var(--color-green-500)] rounded disabled:opacity-50"
+          className="px-4 py-2 text-[var(--color-slate-500)] hover:text-[var(--color-slate-700)]/80 bg-opacity-40 bg-[var(--color-gray-100)]/30 
+          hover:bg-[var(--color-slate-200)]/20  border hover:border-[var(--color-text-primary_20)] border-[var(--color-text-primary_80)] 
+          rounded disabled:opacity-50 disabled:hover:border-[var(--color-text-primary_80)] disabled:hover:bg-[var(--color-gray-100)]/30 disabled:cursor-not-allowed"
         >
           Anterior
         </button>
@@ -46,7 +48,9 @@ export default function ProductsPage() {
         <button
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 text-[var(--color-green-500)] hover:bg-teal-700/10  border border-[var(--color-green-500)] rounded disabled:opacity-50"
+          className="px-4 py-2 text-[var(--color-slate-500)] hover:text-[var(--color-slate-700)]/80 bg-opacity-40 bg-[var(--color-gray-100)]/30 
+          hover:bg-[var(--color-slate-200)]/20  border hover:border-[var(--color-text-primary_20)] border-[var(--color-text-primary_80)] 
+          rounded disabled:opacity-50 disabled:hover:border-[var(--color-text-primary_80)] disabled:hover:bg-[var(--color-gray-100)]/30 disabled:cursor-not-allowed"
         >
           Siguiente
         </button>
