@@ -40,7 +40,7 @@ export default function SavePlaylistButton({ playlistName, uris, onRequireLogin 
     <div>
       <button 
       onClick={handleSaveClick}
-      className="flex items-center rounded-lg bg-teal-400/10 px-3 py-1 hover:bg-teal-700/10 hover:text-[var(--color-green-500)] text-xl font-medium leading-5 text-[var(--color-green-300)]">
+      className="flex items-center rounded-lg bg-[var(--color-slate-400)]/10 px-3 py-1 hover:bg-[var(--color-slate-400)]/5 text-xl font-medium leading-5 text-[var(--color-text-primary_60)]">
         <IoAddCircle className="m-1"/>
         <p className="text-xs text-[var(--color-slate-400)]">Guardar en Spotify</p>
       </button>
