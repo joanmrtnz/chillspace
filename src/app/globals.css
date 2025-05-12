@@ -46,6 +46,14 @@ strong {
   font-weight: 600;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--color-text-primary_50); 
+  width: 1.5rem; 
+  height: 1.5rem; 
+  --swiper-navigation-size: 1rem;
+}
+
 @theme {
     --animate-breathe: breathe 16s infinite ease-in-out;
     --animate-expand:  expand 16s infinite ease-in-out;

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import SavePlaylistButton from "../../components/SavePlaylistButton";
+import SavePlaylistButton from "./SavePlaylistButton";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
 
 export default function PlaylistCard({
@@ -13,7 +13,8 @@ export default function PlaylistCard({
   spotifyLink,
   youtubeLink,
   uris,
-  onRequireLogin,
+ onRequireLogin,
+  
 }: {
   title: string
   image: string
@@ -22,7 +23,8 @@ export default function PlaylistCard({
   spotifyLink: string
   youtubeLink: string
   uris: string[]
-  onRequireLogin: () => void;
+  onRequireLogin: () => void
+  
 }) {
 
   return (
