@@ -1,7 +1,6 @@
 "use client";
-
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // por si prefieres router.back()
+import { useRouter } from "next/navigation";
 import { FaArrowLeft } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
 

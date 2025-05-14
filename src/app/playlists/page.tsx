@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import  moods  from "../../lib/spotify/moods";
+import { allMoods }  from "../../lib/spotify/moods";
 import BackButton from "@/components/BackButton";
 
 export default function MoodSelector() {
@@ -11,7 +11,7 @@ export default function MoodSelector() {
       <BackButton href="/" positionClass="absolute top-21 left-4" />  
       <h1 className="text-4xl font-bold mb-8">¿Cómo te sientes hoy?</h1>
       <div className="flex gap-6">
-        {moods.map((mood) => (
+        {allMoods.map((mood) => (
           <button
             key={mood.id}
             className="text-6xl p-6 rounded-full hover:bg-[var(--shadow-gray)] bg-[var(--color-gray-200)] transition"
