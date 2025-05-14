@@ -9,5 +9,12 @@ export default function SpotifyLoginPage() {
     window.location.href = buildSpotifyAuthUrl( redirectTo );
   }, []);
 
-  return <p>Redirigiendo a Spotify...</p>;
+  return (
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-2xl font-bold mb-7 text-center">
+        Iniciando sesión…
+      </h1>
+      <div className="animate-spin rounded-full h-20 w-20 border-t-4 border-[var(--color-text-primary)]" />
+    </div>
+  );
 }
