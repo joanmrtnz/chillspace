@@ -1,16 +1,9 @@
 "use client";
-
-import Link from "next/link";
 import moods from "../../../lib/spotify/moods";
-import PlaylistCard from "../../../components/PlaylistCard";
 import { notFound } from "next/navigation";
 import { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import PlaylistCarousel from "@/components/PlaylistCarousel";
-
-
-
-
+import BackButton from "@/components/BackButton";
 
 export default function Playlists({ params }: { params: { mood?: string } }) {
   if (!params?.mood) return notFound();
@@ -24,12 +17,7 @@ export default function Playlists({ params }: { params: { mood?: string } }) {
 
 
     <div className="mt-[60px] md:mt-[50px] min-h-screen flex items-center justify-center px-4 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
-        <Link href="/playlists">
-        <button className="absolute top-8 left-4 text-[var(--color-black)] p-3 hover:bg-[var(--color-gray-200)] rounded-lg transition">
-          <FaArrowLeft />
-        </button>
-      </Link>
-
+      <BackButton href="/playlists" positionClass="absolute top-8 left-4" />  
       <div className="relative w-full max-w-4xl px-6">
         <PlaylistCarousel playlists={mood.playlists}  onRequireLogin={() => setShowLoginDialog(true)}/>
       </div>

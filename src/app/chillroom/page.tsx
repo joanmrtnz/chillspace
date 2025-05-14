@@ -1,7 +1,10 @@
+import BackButton from "@/components/BackButton";
+
 export default function ChillRoomPage() {
 
   return (
     <div className="md:min-h-screen min-h-[80vh] flex flex-col  justify-center  px-6  m-auto p-4">
+      <BackButton href="/" positionClass="absolute top-21 left-4" />  
       <div className="flex items-center justify-center font-roboto">
         <div className="relative w-[200px] h-[200px] border border-[var(--shadow-gray)]  flex items-center justify-center">
           <div

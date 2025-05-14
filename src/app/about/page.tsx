@@ -1,11 +1,13 @@
 // app/about/page.tsx
 "use client";
 
+import BackButton from "@/components/BackButton";
 import Link from "next/link";
 
 export default function AboutPage() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center text-[var(--color-text-primary)] px-6 py-16">
+            <BackButton href="/" positionClass="absolute top-21 left-4" />  
             <div className="max-w-4xl w-full grid gap-12 md:grid-cols-2 items-center">
                 <div className="space-y-8">
                     <h1 className="text-4xl font-bold">Sobre <span className="text-[var(--color-text-primary_70)]">chillspace</span></h1>
