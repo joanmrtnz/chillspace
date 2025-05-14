@@ -70,6 +70,10 @@ export default function Header() {
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
             Iniciar sesión en Spotify
         </Link>
+        <Link href="/about" className="bg-white/30 text-[var(--color-slate-400)]
+         px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
+          Proposito de la web
+        </Link>
         <Link href="/playlists" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
           Playlists
@@ -81,10 +85,6 @@ export default function Header() {
         <Link href="/products" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
           Productos
-        </Link>
-        <Link href="/about" className="bg-white/30 text-[var(--color-slate-400)]
-         px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-          About
         </Link>
       </div>
     </header>
