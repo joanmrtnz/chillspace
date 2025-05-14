@@ -3,10 +3,14 @@ import { useState } from "react";
 import PlaylistCarousel from "@/components/PlaylistCarousel";
 import BackButton from "@/components/BackButton";
 import type { Mood } from "@/lib/spotify/moods";
+import ResultDialog from "@/components/ResultDialog";
+
 
 
 export default function PlaylistsClient({ mood } : { mood : Mood }) {
   const [showLoginDialog, setShowLoginDialog] = useState(false);
+  const [saveResult, setSaveResult] = useState<"success"|"error"|null>(null);
+
 
   return (
     <div className="mt-[60px] md:mt-[50px] min-h-screen flex items-center justify-center px-4 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
@@ -15,6 +19,7 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
         <PlaylistCarousel
           playlists={mood.playlists}
           onRequireLogin={() => setShowLoginDialog(true)}
+          onSaveResult={setSaveResult}
         />
       </div>
            {showLoginDialog && (
@@ -38,6 +43,7 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
           </div>
         </div>
       )}
+      <ResultDialog type={saveResult} onClose={() => setSaveResult(null)} />
     </div>
   );
 }

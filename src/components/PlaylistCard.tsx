@@ -14,6 +14,7 @@ export default function PlaylistCard({
   youtubeLink,
   uris,
  onRequireLogin,
+ onSaveResult,
   
 }: {
   title: string
@@ -24,7 +25,7 @@ export default function PlaylistCard({
   youtubeLink: string
   uris: string[]
   onRequireLogin: () => void
-  
+  onSaveResult: (r: "success" | "error") => void;
 }) {
 
   return (
@@ -75,7 +76,7 @@ export default function PlaylistCard({
         </Link>
 
         <div className="flex-1 flex items-center">
-          <SavePlaylistButton playlistName={title} uris={uris}  onRequireLogin={onRequireLogin}/>
+          <SavePlaylistButton playlistName={title} uris={uris}  onRequireLogin={onRequireLogin} onSaveResult={onSaveResult}/>
         </div>
       </div>
     </div>

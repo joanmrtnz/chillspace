@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import { IoAddCircle } from "react-icons/io5";
 
 
-export default function SavePlaylistButton({ playlistName, uris, onRequireLogin }: { playlistName: string; uris: string[], onRequireLogin: () => void; }) {
+export default function SavePlaylistButton({ playlistName, uris, onRequireLogin, onSaveResult }:
+   { playlistName: string; uris: string[], onRequireLogin: () => void, onSaveResult: (r: "success" | "error") => void; }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
@@ -17,23 +18,16 @@ export default function SavePlaylistButton({ playlistName, uris, onRequireLogin 
   }, []);
 
   const handleSaveClick = async () => {
-    console.log(isAuthenticated);
-    if (isAuthenticated) {
-      const res = await fetch("/api/save-playlist", {
+    
+    if (!isAuthenticated) return onRequireLogin(); 
+     const res = await fetch("/api/save-playlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ playlistName, uris }),
       });
-      console.log(res);
-      const data = await res.json();
-      if (data.success) {
-        alert("Playlist guardada exitosamente");
-      } else {
-        alert("Error al guardar la playlist");
-      }
-    } else {
-      onRequireLogin(); 
-    }
+
+      const { success } = await res.json();
+      onSaveResult(success ? "success" : "error");
   };
 
   return (

@@ -16,10 +16,10 @@ interface Playlist {
   uris: string[];
 }
 
-export default function PlaylistCarousel({ playlists, onRequireLogin } : { 
+export default function PlaylistCarousel({ playlists, onRequireLogin, onSaveResult } : { 
     playlists: Playlist[]; 
     onRequireLogin: () => void;
- }) {
+    onSaveResult: (r: "success" | "error") => void; }){
   return (
     <Swiper
       modules={[Navigation]}
@@ -34,7 +34,8 @@ export default function PlaylistCarousel({ playlists, onRequireLogin } : {
       {playlists.map((pl) => (
         <SwiperSlide key={pl.id}>
           <PlaylistCard {...pl} 
-          onRequireLogin={onRequireLogin}/>
+          onRequireLogin={onRequireLogin}
+          onSaveResult={onSaveResult} />
         </SwiperSlide>
       ))}
     </Swiper>
