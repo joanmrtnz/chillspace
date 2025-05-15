@@ -20,7 +20,7 @@ export default function ProductsPage() {
   const endIndex = startIndex + itemsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
   return (
-    <div className="md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-center justify-center text-left m-auto p-4 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
+    <div className="bg-black/1 md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-center justify-center text-left m-auto p-4 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
       <BackButton href="/" positionClass="absolute top-21 left-4" />  
       <h1 className="text-3xl font-bold mb-6 text-center">Productos</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
