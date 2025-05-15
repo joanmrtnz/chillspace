@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-        <footer className="relative  text-[var(--color-slate-500)] py-8 sm:py-10 flex flex-col items-center text-center ">
+        <footer className="relative  border border-white/20 text-[var(--color-slate-500)] py-8 sm:py-10 flex flex-col items-center text-center ">
             <div className="w-full max-w-5xl flex flex-col sm:flex-row justify-around items-start px-4 mb-6">
 
                 <div className="flex-1 min-w-[150px] mb-6 sm:mb-0 text-left">
