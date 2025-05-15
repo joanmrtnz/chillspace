@@ -2,17 +2,22 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
+import { useTranslations } from 'next-intl';
+import LanguageSelect from "@/components/LanguageSelect";
+
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = useTranslations('ui');
 
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", menuOpen);
   }, [menuOpen]);
 
   return (
-        <header className="bg-[var(--color-gray-100)]/90 md:bg-[var(--color-gray-100)]/30 bg-opacity-90 md:bg-opacity-30 sm:backdrop-blur-lg sm:bg-[var(--color-gray-100)]/40 fixed top-0 w-full z-50 px-6 md:px-[50px] ">
-        <nav className="h-[80px] w-full flex items-center justify-between text-s/7">
+    <header className="bg-[var(--color-gray-100)]/90 md:bg-[var(--color-gray-100)]/30 bg-opacity-90 md:bg-opacity-30 sm:backdrop-blur-lg sm:bg-[var(--color-gray-100)]/40 fixed top-0 w-full z-50 px-6 md:px-[50px] ">
+      <nav className="h-[80px] w-full flex items-center justify-between text-s/7">
 
         <Link href="/">
           <img
@@ -35,11 +40,14 @@ export default function Header() {
           <Link href="/about" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
             Proposito
           </Link>
-
+        
+          <div className="hidden md:flex items-center gap-2 ml-4">
+            <LanguageSelect />
+          </div>
           <Link href="/spotify-login">
             <button className="text-[var(--color-text-primary)] hover:text-[var(--color-slate-700)]/80 bg-opacity-40 
             bg-[var(--color-gray-100)]/30 hover:bg-[var(--color-slate-200)]/20  border hover:border-[var(--color-text-primary_20)] 
-            border-[var(--color-text-primary)] focus:ring-[var(--color-green-500)] focus:outline-none  rounded-lg text-sm px-5 py-3.5">Iniciar sesión en Spotify</button>
+            border-[var(--color-text-primary)] rounded-lg text-sm px-5 py-3.5">Iniciar sesión en Spotify</button>
           </Link>
         </ul>
 
@@ -64,12 +72,16 @@ export default function Header() {
           <img
             src="/chillspace-logo.png"
             alt="chillspace logo"
-            className="absolute top-5 left-4 max-h-[2.5rem]"/>
+            className="absolute top-5 left-4 max-h-[2.5rem]" />
         </Link>
         <Link href="/spotify-login" className="mt-20 bg-black/5 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-            Iniciar sesión en Spotify
+          Iniciar sesión en Spotify
         </Link>
+        <div className="bg-black/5 text-[var(--color-slate-400)] rounded-md w-full transition
+          flex justify-start md:hidden">
+            <LanguageSelect />
+        </div>
         <Link href="/about" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
           Proposito de la web
