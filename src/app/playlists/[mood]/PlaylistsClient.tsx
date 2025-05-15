@@ -13,7 +13,7 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
 
 
   return (
-    <div className="mt-[60px] md:mt-[50px] min-h-screen flex items-center justify-center px-4 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
+    <div className="bg-black/1 mt-[60px] md:mt-[50px] min-h-screen flex items-center justify-center px-4 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
       <BackButton href="/playlists" positionClass="absolute top-8 left-4" />
       <div className="relative w-full max-w-4xl px-6">
         <PlaylistCarousel

@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function AboutPage() {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center text-[var(--color-text-primary)] px-6 py-16">
+        <section className="bg-black/1 md:min-h-screen min-h-[180vh] flex flex-col items-center justify-center text-[var(--color-text-primary)] px-6 py-16">
             <BackButton href="/" positionClass="absolute top-21 left-4" />  
             <div className="max-w-4xl w-full grid gap-12 md:grid-cols-2 items-center">
                 <div className="space-y-8">
-                    <h1 className="text-4xl font-bold">Sobre <span className="text-[var(--color-text-primary_70)]">chillspace</span></h1>
+                    <h1 className="text-center md:text-left text-4xl font-bold">Sobre <span className="text-[var(--color-text-primary_70)]">chillspace</span></h1>
                     <div className="text-base leading-relaxed">
                         🍵 chillspace es un proyecto personal para demostrar mis habilidades como
                         desarrollador web:
@@ -26,7 +26,7 @@ export default function AboutPage() {
                         Todo diseñado para ofrecer una experiencia <span className="font-bold text-[var(--color-text-primary)]/50">relajante</span>.
                     </div>
 
-                    <div className="bg-white/20 text-[var(--color-slate-400)] px-4 py-6 rounded-md transition space-y-6">
+                    <div className="bg-white/40 md:bg-white/20 text-[var(--color-slate-400)] px-4 py-6 rounded-md transition space-y-6">
                         <p className="text-base leading-relaxed">
                             Soy Joan Martínez, <strong>Web developer</strong>. Este portfolio muestra
                             mis proyectos, código limpio y compromiso con buenas prácticas.
