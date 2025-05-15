@@ -2,30 +2,40 @@ import Header from "@/components/Header";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { NextIntlClientProvider } from 'next-intl';
+import {getLocale} from 'next-intl/server';
 
-export default function RootLayout({
+
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+   children: React.ReactNode;
+}) {
+  const locale = await getLocale();     
+  
+ 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body>
         <div className="relative min-h-screen bg-black">
-          <Image
-            src="/images/home.jpg"
-            alt="mountain"
-            fill
-            className="object-cover z-0"
-            priority
-          />
+          <NextIntlClientProvider>
+            <Image
+              src="/images/home.jpg"
+              alt="mountain"
+              fill
+              className="object-cover z-0"
+              priority
+            />
 
-          <div className="absolute inset-0 bg-white/20 z-10" />
-          <div className="relative z-20">
-            <Header />
-            <main className="">{children}</main>
-            <Footer />
-          </div>
+            <div className="absolute inset-0 bg-white/20 z-10" />
+            <div className="relative z-20">
+              <Header />
+              <main>
+                {children}
+              </main>
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
         </div>
       </body>
     </html >

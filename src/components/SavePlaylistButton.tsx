@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { IoAddCircle } from "react-icons/io5";
+import {useTranslations} from 'next-intl';
 
 
 export default function SavePlaylistButton({ playlistName, uris, onRequireLogin, onSaveResult }:
    { playlistName: string; uris: string[], onRequireLogin: () => void, onSaveResult: (r: "success" | "error") => void; }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const t = useTranslations('playlists');
 
   useEffect(() => {
     async function checkAuth() {
@@ -36,7 +38,7 @@ export default function SavePlaylistButton({ playlistName, uris, onRequireLogin,
       onClick={handleSaveClick}
       className="flex items-center rounded-lg bg-[var(--color-slate-400)]/10 px-3 py-1 hover:bg-[var(--color-slate-400)]/5 text-xl font-medium leading-5 text-[var(--color-text-primary_60)]">
         <IoAddCircle className="m-1"/>
-        <p className="text-xs text-[var(--color-slate-400)]">Guardar en Spotify</p>
+        <p className="text-xs text-[var(--color-slate-400)]">{t('save')} Spotify</p>
       </button>
     </div>
   );

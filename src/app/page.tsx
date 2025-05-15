@@ -1,10 +1,13 @@
 import Link from "next/link";
+import {getTranslations} from 'next-intl/server';
 
-export default function Home() {
+export default async function Home() {
+   
+   const t = await getTranslations('home');
   return (
     <div className="relative z-10 flex flex-col items-start justify-center h-screen px-6 md:px-20">
       <h1 className="text-5xl md:text-6xl font-bold text-[var(--color-text-primary)] mb-4">
-        Bienvenido a <span className="text-[var(--color-text-primary)]/70">chillspace</span>
+        {t('welcome')} <span className="text-[var(--color-text-primary)]/70">chillspace</span>
       </h1>
       <p className="font-mono text-lg md:text-xl text-[var(--color-slate-400)] mb-8 max-w-lg">
         Tu refugio digital para relajarte, descubrir música y desconectar.
