@@ -30,10 +30,6 @@ export default async function Home() {
         ))}
       </nav>
 
-      <div className="absolute bottom-10 animate-bounce">
-        <span className="block w-8 h-1 bg-white mb-2 rounded" />
-        <span className="block w-4 h-1 bg-white rounded" />
-      </div>
     </div>
   );
 }
