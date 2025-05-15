@@ -8,10 +8,10 @@ export default function Footer() {
                 <div className="flex-1 min-w-[150px] mb-6 sm:mb-0 text-left">
                     <h4 className="text-md font-semibold mb-3">Enlaces</h4>
                     <ul className="space-y-1 text-sm">
-                        <li><a href="/about" className="hover:underline">Playlists</a></li>
-                        <li><a href="/faq" className="hover:underline">ChillRoom</a></li>
+                        <li><a href="/playlists" className="hover:underline">Playlists</a></li>
+                        <li><a href="/chillroom" className="hover:underline">Chillroom</a></li>
                         <li><a href="/products" className="hover:underline">Products</a></li>
-                        <li><a href="/contact" className="hover:underline">Iniciar sesión en Spotify</a></li>
+                        <li><a href="/spotify-login" className="hover:underline">Iniciar sesión en Spotify</a></li>
                     </ul>
                 </div>
 
@@ -54,8 +54,7 @@ export default function Footer() {
                 <div className="flex-1 min-w-[150px] text-left">
                     <h4 className="text-md font-semibold mb-3">Más</h4>
                     <ul className="space-y-1 text-sm">
-                        <li><a href="/privacy" className="hover:underline">Política de Privacidad</a></li>
-                        <li><a href="/terms" className="hover:underline">Términos y Condiciones</a></li>
+                        <li><a href="/about" className="hover:underline">Proposito de la web</a></li>
                     </ul>
                 </div>
 
