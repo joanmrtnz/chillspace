@@ -1,0 +1,127 @@
+{
+  "ui": {
+    "playlists": "Playlists",
+    "chillroom": "Sala Chill",
+    "products": "Productos",
+    "about": "Sobre esta web",
+    "login": "Iniciar sesión",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "noLoggedMessage": "No estás autenticado en Spotify. ¿Deseas iniciar sesión?",
+    "login-btn": "Iniciar sesión en Spotify",
+    "youtube-btn": "Ver en Youtube",
+    "spotify-btn": "Escuchar en Spotify",
+    "save-btn": "Guardar en Spotify",
+    "buy-btn": "Comprar",
+    "logging": "Iniciando sesión...",
+    "open-menu": "Abrir menú",
+    "playlist-saved": "Playlist guardada",
+    "playlist-not-saved": "Hubo un error al guardar",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "of": "de"
+  },
+  "home": {
+    "welcome": "Bienvenido a",
+    "description": "Tu refugio digital para relajarte, descubrir música y desconectar."
+  },
+  "playlists": {
+    "title": "¿Cómo te sientes hoy?",
+    "description": " Indicanos tu mood para recomendarte playlists.",
+    "mood": {
+      "happy": "Feliz",
+      "sad": "Triste",
+      "relaxed": "Relajado"
+    },
+    "descriptions": {
+      "1": "Temas alegres y energéticos para levantar el ánimo.",
+      "2": "Éxitos indie y pop para mantener el buen humor.",
+      "3": "Melodías optimistas para sonreír durante todo el día.",
+      "4": "Canciones emotivas para acompañar momentos.",
+      "5": "Ritmos suaves y melodías tranquilas para relajarte.",
+      "6": "Música ambiental y sonidos de la naturaleza para desconectar.",
+      "7": "Ritmos suaves y melodías tranquilas para relajarte.",
+      "8": "Música ambiental y sonidos de la naturaleza para desconectar.",
+      "9": "Ritmos suaves y melodías tranquilas para relajarte.",
+      "10": "Melodías relajantes para tu yo interior.",
+      "11": "Sonidos para centrar la mente.",
+      "12": "Ritmos tranquilos ideales para un viaje sonoro reparador.",
+      "13": "Canciones emotivas para acompañar momentos.",
+      "14": "Tonadas melancólicas que llegan al corazón.",
+      "15": "Piezas introspectivas para momentos de soledad."
+    }
+  },
+  "products": {
+    "title": "Productos",
+    "1": {
+      "title": "Gafas de bloqueo de luz azul",
+      "description": "Gafas que bloquean la luz azul de pantallas para reducir la fatiga ocular y mejorar el descanso."
+    },
+     "2": {
+      "title": "Vinylchill: Jazzy / Various",
+      "description": "Vinilo de jazz suave ideal para ambientar espacios relajantes con un toque elegante y nostálgico."
+    },
+    "3": {
+      "title": "Gominolas de Ashwagandha",
+      "description": "Para el estrés y la relajación. Con Gaba, Rhodiola y Vitaminas B6 y B12"
+    },
+    "4": {
+      "title": "Yogi Juguete antiestrés",
+      "description": "Anillo anti-ansiedad extremadamente divertido."
+    },
+    "5": {
+      "title": "Finoly Libro Mandalas Colorear",
+      "description": "Puede ayudarte a alejarte de los dispositivos electrónicos y proporcionarte paz interior."
+    },
+    "6": {
+      "title": "Cascos Inalámbricos Cancelación de Ruido Activa",
+      "description": "Auriculares Bluetooth con cancelación activa de ruido para una escucha inmersiva y sin distracciones."
+    },
+    "7": {
+      "title": "Humidificador de aceites y Lámpara de sal",
+      "description": "Lámpara de sal con difusor de aceites esenciales que crea un ambiente cálido y relajante ideal para descansar."
+    },
+    "8": {
+      "title": "Magicteam Máquina de ruido blanco",
+      "description": "Máquina de ruido blanco portátil con múltiples sonidos para ayudar a dormir y relajarse."
+    },
+    "9": {
+      "title": "Colchón de Masaje eléctrico",
+      "description": "Colchón de masaje eléctrico con calor y múltiples modos para aliviar la tensión muscular."
+    },
+    "10": {
+      "title": "Masajeador de ojos con calor",
+      "description": "Masajeador ocular con calor, vibración y música Bluetooth para aliviar la fatiga visual y relajar cuerpo y mente."
+    },
+    "11": {
+      "title": "Masajeador de Pies con Control Remoto",
+      "description": "Masajeador de pies eléctrico con calor, compresión de aire y rodillos shiatsu para una experiencia de relax en casa u oficina."
+    },
+    "12": {
+      "title": "Aceites Esenciales para Humidificador",
+      "description": "Set de aceites esenciales florales 100% naturales, ideal para difusores y crear un ambiente relajante y aromático."
+    }
+  },
+  "about": {
+    "about": "Sobre",
+    "description1": "chillspace es un proyecto personal para demostrar mis habilidades como desarrollador web:",
+    "description2": "Todo diseñado para ofrecer una experiencia",
+    "portfolio-description": "Este portfolio muestra mis proyectos, código limpio y compromiso con buenas prácticas.",
+    "relaxing": "relajante",
+    "my-name": "Soy Joan Martínez",
+    "portfolio-btn": "Ver mi portfolio",
+    "animations": "Animaciones"
+  },
+  "chillroom": {
+    "step1": "Inspira",
+    "step2": "Aguanta",
+    "step3": "Exhala",
+    "step4": "Aguanta"
+  },
+  "footer": {
+    "links": "Enlaces",
+    "more": "Más",
+    "comunity": "Comunidad",
+    "all-rights": "Todos los derechos reservados."
+  }
+}

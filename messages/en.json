@@ -1,0 +1,128 @@
+{
+  "ui": {
+    "playlists": "Playlists",
+    "chillroom": "Chill Room",
+    "products": "Products",
+    "about": "About this website",
+    "login": "Log in",
+    "cancel": "Cancel",
+    "close": "Close",
+    "noLoggedMessage": "You are not authenticated with Spotify. Would you like to log in?",
+    "login-btn": "Log in with Spotify",
+    "youtube-btn": "Watch on YouTube",
+    "spotify-btn": "Listen on Spotify",
+    "save-btn": "Save to Spotify",
+    "buy-btn": "Buy",
+    "logging": "Logging in...",
+    "open-menu": "Open menu",
+    "playlist-saved": "Playlist saved",
+    "playlist-not-saved": "There was an error saving the playlist",
+    "previous": "Previous",
+    "next": "Next",
+    "of": "of"
+  },
+  "home": {
+    "welcome": "Welcome to",
+    "description": "Your digital refuge to relax, discover music and disconnect."
+  },
+  "playlists": {
+    "title": "How do you feel today?",
+    "description": "Tell us your mood so we can recommend playlists.",
+    "mood": {
+      "happy": "Happy",
+      "sad": "Sad",
+      "relaxed": "Relaxed"
+    },
+    "descriptions": {
+      "1": "Cheerful, energetic tracks to lift your mood.",
+      "2": "Indie and pop hits to keep the good vibes.",
+      "3": "Optimistic melodies to make you smile all day.",
+      "4": "Emotive songs to accompany your moments.",
+      "5": "Soft rhythms and calm melodies to help you unwind.",
+      "6": "Ambient music and nature sounds to disconnect.",
+      "7": "Soft rhythms and calm melodies to help you unwind.",
+      "8": "Ambient music and nature sounds to disconnect.",
+      "9": "Soft rhythms and calm melodies to help you unwind.",
+      "10": "Soothing melodies for your inner self.",
+      "11": "Sounds to center the mind.",
+      "12": "Calm rhythms ideal for a restorative sonic journey.",
+      "13": "Emotive songs to accompany your moments.",
+      "14": "Melancholic tunes that touch the heart.",
+      "15": "Introspective pieces for moments of solitude."
+    }
+  },
+  "products": {
+    "title": "Products",
+    "1": {
+      "title": "Blue-Light Blocking Glasses",
+      "description": "Glasses that block screen blue light to reduce eye strain and improve rest."
+    },
+    "2": {
+      "title": "Vinylchill: Jazzy / Various",
+      "description": "Smooth jazz vinyl, perfect to set relaxing spaces with an elegant nostalgic touch."
+    },
+    "3": {
+      "title": "Ashwagandha Gummies",
+      "description": "For stress and relaxation. With GABA, Rhodiola and Vitamins B6 & B12."
+    },
+    "4": {
+      "title": "Yogi Anti-Stress Toy",
+      "description": "Extremely fun anxiety-relief ring."
+    },
+    "5": {
+      "title": "Finoly Mandala Coloring Book",
+      "description": "Helps you stay away from screens and provides inner peace."
+    },
+    "6": {
+      "title": "Wireless Headphones with ANC",
+      "description": "Bluetooth headphones with active noise cancellation for immersive, distraction-free listening."
+    },
+    "7": {
+      "title": "Essential-Oil Humidifier & Salt Lamp",
+      "description": "Salt lamp with essential-oil diffuser that creates a warm, relaxing ambience—perfect for resting."
+    },
+    "8": {
+      "title": "Magicteam White-Noise Machine",
+      "description": "Portable white-noise machine with multiple sounds to help sleep and relax."
+    },
+    "9": {
+      "title": "Electric Massage Mattress",
+      "description": "Electric massage mat with heat and multiple modes to relieve muscle tension."
+    },
+    "10": {
+      "title": "Heated Eye Massager",
+      "description": "Eye massager with heat, vibration and Bluetooth music to relieve eye fatigue and relax body and mind."
+    },
+    "11": {
+      "title": "Foot Massager with Remote",
+      "description": "Electric foot massager with heat, air compression and shiatsu rollers for a spa-like experience at home or office."
+    },
+    "12": {
+      "title": "Essential Oils for Diffuser",
+      "description": "Set of 100 % natural floral essential oils—ideal for diffusers and creating a relaxing, aromatic atmosphere."
+    }
+  },
+  "about": {
+    "about": "About",
+    "description1": "chillspace is a personal project to showcase my skills as a web developer:",
+    "description2": "All designed to offer a ",
+    "portfolio-description": "This portfolio demonstrates my projects, clean code and commitment to best practices.",
+    "relaxing": "relaxing",
+    "experience": "experience",
+    "my-name": "I’m Joan Martínez",
+    "portfolio-btn": "View my portfolio",
+    "animations": "Animations"
+  },
+  "chillroom": {
+    "step1": "Inhale",
+    "step2": "Hold",
+    "step3": "Exhale",
+    "step4": "Hold"
+  },
+  "footer": {
+    "links": "Links",
+    "more": "More",
+    "comunity": "Community",
+    "all-rights": "All rights reserved."
+  }
+}

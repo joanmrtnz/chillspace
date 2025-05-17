@@ -1,0 +1,127 @@
+{
+  "ui": {
+    "playlists": "Playlists",
+    "chillroom": "Sala Chill",
+    "products": "Productes",
+    "about": "Sobre aquest lloc web",
+    "login": "Inicia sessió",
+    "cancel": "Cancel·la",
+    "close": "Tanca",
+    "noLoggedMessage": "No estàs autenticat amb Spotify. Vols iniciar sessió?",
+    "login-btn": "Inicia sessió amb Spotify",
+    "youtube-btn": "Mira a YouTube",
+    "spotify-btn": "Escolta a Spotify",
+    "save-btn": "Desa a Spotify",
+    "buy-btn": "Compra",
+    "logging": "Iniciant sessió…",
+    "open-menu": "Obre el menú",
+    "playlist-saved": "Playlist desada",
+    "playlist-not-saved": "S'ha produït un error en desar la playlist",
+    "previous": "Anterior",
+    "next": "Següent",
+    "of": "de"
+  },
+  "home": {
+    "welcome": "Benvingut a",
+    "description": "El teu refugi digital per relaxar-te, descobrir música i desconnectar."
+  },
+  "playlists": {
+    "title": "Com et sents avui?",
+    "description": "Indica'ns el teu estat d'ànim perquè et recomanem playlists.",
+    "mood": {
+      "happy": "Feliç",
+      "sad": "Trist",
+      "relaxed": "Relaxat"
+    },
+    "descriptions": {
+      "1": "Cançons alegres i energètiques per animar-te.",
+      "2": "Èxits indie i pop per mantenir les bones vibracions.",
+      "3": "Melodies optimistes que et faran somriure tot el dia.",
+      "4": "Cançons emotives per acompanyar els teus moments.",
+      "5": "Ritmes suaus i melodies calmades per ajudar-te a desconnectar.",
+      "6": "Música ambiental i sons de la natura per desconnectar.",
+      "7": "Ritmes suaus i melodies calmades per ajudar-te a desconnectar.",
+      "8": "Música ambiental i sons de la natura per desconnectar.",
+      "9": "Ritmes suaus i melodies calmades per ajudar-te a desconnectar.",
+      "10": "Melodies suaus per al teu interior.",
+      "11": "Sons per centrar la ment.",
+      "12": "Ritmes calmats ideals per a un viatge sonor reparador.",
+      "13": "Cançons emotives per acompanyar els teus moments.",
+      "14": "Cançons melancòliques que toquen el cor.",
+      "15": "Peces introspectives per a moments de solitud."
+    }
+  },
+  "products": {
+    "title": "Productes",
+    "1": {
+      "title": "Ulleres amb filtre de llum blava",
+      "description": "Ulleres que bloquegen la llum blava de la pantalla per reduir la fatiga visual i millorar el descans."
+    },
+    "2": {
+      "title": "Vinylchill: Jazz Suau / Diversos",
+      "description": "Vinil de jazz suau, perfecte per ambientar espais relaxants amb un toc elegant i nostàlgic."
+    },
+    "3": {
+      "title": "Gominoles d'ashwagandha",
+      "description": "Per a l'estrès i la relaxació. Amb GABA, rhodiola i vitamines B6 i B12."
+    },
+    "4": {
+      "title": "Joguina antiestrès Yogi",
+      "description": "Anell d'alleujament de l'ansietat extremadament divertit."
+    },
+    "5": {
+      "title": "Llibre per acolorir mandales Finoly",
+      "description": "T'ajuda a allunyar-te de les pantalles i aporta pau interior."
+    },
+    "6": {
+      "title": "Auriculars sense fils amb ANC",
+      "description": "Auriculars Bluetooth amb cancel·lació activa de soroll per a una escolta immersiva sense distraccions."
+    },
+    "7": {
+      "title": "Humidificador d'aromes i llum de sal",
+      "description": "Llum de sal amb difusor d'olis essencials que crea un ambient càlid i relaxant, perfecte per descansar."
+    },
+    "8": {
+      "title": "Màquina de soroll blanc Magicteam",
+      "description": "Màquina de soroll blanc portàtil amb múltiples sons per ajudar a dormir i relaxar-se."
+    },
+    "9": {
+      "title": "Matalàs elèctric massatgista",
+      "description": "Matalàs massatgista elèctric amb calor i múltiples modes per alleujar la tensió muscular."
+    },
+    "10": {
+      "title": "Massatgista ocular amb calor",
+      "description": "Massatgista d'ulls amb calor, vibració i música Bluetooth per alleujar la fatiga ocular i relaxar cos i ment."
+    },
+    "11": {
+      "title": "Massatgista de peus amb comandament",
+      "description": "Massatgista de peus elèctric amb calor, compressió d'aire i rodets shiatsu per a una experiència de spa a casa o a l'oficina."
+    },
+    "12": {
+      "title": "Olis essencials per a difusor",
+      "description": "Conjunt d'olis essencials florals 100 % naturals, ideals per a difusors i per crear una atmosfera relaxant i aromàtica."
+    }
+  },
+  "about": {
+    "about": "Sobre",
+    "description1": "chillspace és un projecte personal per mostrar les meves habilitats com a desenvolupador web:",
+    "description2": "Tot dissenyat per oferir una experiencia",
+    "portfolio-description": "Aquest portafolis demostra els meus projectes, codi net i compromís amb les bones pràctiques.",
+    "relaxing": "relaxant",
+    "my-name": "Sóc Joan Martínez",
+    "portfolio-btn": "Veure el meu portafolis",
+    "animations": "Animacions"
+  },
+  "chillroom": {
+    "step1": "Inhala",
+    "step2": "Manté",
+    "step3": "Exhala",
+    "step4": "Manté"
+  },
+  "footer": {
+    "links": "Enllaços",
+    "more": "Més",
+    "comunity": "Comunitat",
+    "all-rights": "Tots els drets reservats."
+  }
+}
