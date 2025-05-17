@@ -2,18 +2,21 @@
 import { useRouter } from "next/navigation";
 import { allMoods }  from "../../lib/spotify/moods";
 import BackButton from "@/components/BackButton";
+import {useTranslations} from 'next-intl';
+
 
 export default function MoodSelector() {
   const router = useRouter();
+  const tPl = useTranslations('playlists');
 
   return (
     <div className="bg-black/1 flex flex-col items-center justify-center md:min-h-screen min-h-[135vh]">
       <BackButton href="/" positionClass="absolute top-21 left-4" />  
 
        <div className="bg-white/30 text-center text-[var(--color-slate-400)] px-10 py-6 rounded-md transition space-y-6">
-          <h1 className="text-2xl md:text-3xl text-[var(--color-text-primary)] font-bold mb-4">¿Cómo te sientes hoy?</h1>
+          <h1 className="text-2xl md:text-3xl text-[var(--color-text-primary)] font-bold mb-4">{tPl('title')}</h1>
           <p className="text-base text-sm leading-relaxed">
-              Indicanos tu mood para recomendarte playlists.
+              {tPl('description')}
           </p>
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center ">
           {allMoods.map((mood) => (
@@ -26,7 +29,7 @@ export default function MoodSelector() {
             >
               
               <img src={mood.emoji} className="w-[1.75rem] my-4"/>
-              {mood.name}
+              {tPl(`mood.${mood.id}`)}
             </button>
           ))}
         </div>

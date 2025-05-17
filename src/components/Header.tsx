@@ -6,10 +6,9 @@ import { useTranslations } from 'next-intl';
 import LanguageSelect from "@/components/LanguageSelect";
 
 
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const t = useTranslations('ui');
+  const tUi = useTranslations('ui');
 
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", menuOpen);
@@ -29,16 +28,16 @@ export default function Header() {
 
         <ul className="hidden md:flex items-center space-x-1 ml-auto">
           <Link href="/playlists" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
-            Playlists
+             {tUi('playlists')}
           </Link>
           <Link href="/chillroom" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
-            Chillroom
+            {tUi('chillroom')}
           </Link>
           <Link href="/products" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
-            Productos
+            {tUi('products')}
           </Link>
           <Link href="/about" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
-            Proposito
+            {tUi('about')}
           </Link>
         
           <div className="hidden md:flex items-center gap-2 ml-4">
@@ -47,14 +46,14 @@ export default function Header() {
           <Link href="/spotify-login">
             <button className="text-[var(--color-text-primary)] hover:text-[var(--color-slate-700)]/80 bg-opacity-40 
             bg-[var(--color-gray-100)]/30 hover:bg-[var(--color-slate-200)]/20  border hover:border-[var(--color-text-primary_20)] 
-            border-[var(--color-text-primary)] rounded-lg text-sm px-5 py-3.5">Iniciar sesión en Spotify</button>
+            border-[var(--color-text-primary)] rounded-lg text-sm px-5 py-3.5">{tUi('login-btn')}</button>
           </Link>
         </ul>
 
         <button
           onClick={() => setMenuOpen(true)}
           className="md:hidden text-3xl text-[var(--color-text-primary)]"
-          aria-label="Abrir menú">
+          aria-label="{tUi('open-menu')}" >
           <FiMenu />
         </button>
       </nav>
@@ -76,7 +75,7 @@ export default function Header() {
         </Link>
         <Link href="/spotify-login" className="mt-20 bg-black/5 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-          Iniciar sesión en Spotify
+          {tUi('login-btn')}
         </Link>
         <div className="bg-black/5 text-[var(--color-slate-400)] rounded-md w-full transition
           flex justify-start md:hidden">
@@ -84,19 +83,19 @@ export default function Header() {
         </div>
         <Link href="/about" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-          Proposito de la web
+          {tUi('about')}
         </Link>
         <Link href="/playlists" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-          Playlists
+          {tUi('playlists')}
         </Link>
         <Link href="/chillroom" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-          Chillroom
+           {tUi('chillroom')}
         </Link>
         <Link href="/products" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
-          Productos
+           {tUi('products')}
         </Link>
       </div>
     </header>

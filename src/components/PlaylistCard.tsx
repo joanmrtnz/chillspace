@@ -4,8 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import SavePlaylistButton from "./SavePlaylistButton";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
+import {useTranslations} from 'next-intl';
+
 
 export default function PlaylistCard({
+  id,
   title,
   image,
   description,
@@ -17,6 +20,7 @@ export default function PlaylistCard({
  onSaveResult,
   
 }: {
+  id: number,
   title: string
   image: string
   description: string
@@ -27,6 +31,11 @@ export default function PlaylistCard({
   onRequireLogin: () => void
   onSaveResult: (r: "success" | "error") => void;
 }) {
+
+  const tUi = useTranslations('ui');
+  const tPl = useTranslations('playlists');
+
+
 
   return (
     <div className="w-full backdrop-blur-lg bg-[var(--color-black)]/5 rounded-xl p-4 sm:p-10
@@ -41,7 +50,7 @@ export default function PlaylistCard({
 
       <h2 className="text-lg text-[var(--color-slate-700)] font-bold mt-4">{title}</h2>   
       <p className="mt-2 text-sm text-[var(--color-slate-400)]">
-        {description}
+         {tPl(`descriptions.${id}`)}
       </p>
 
       <div className="mt-3 flex flex-wrap gap-2">
@@ -62,7 +71,7 @@ export default function PlaylistCard({
                              px-3 py-1 text-xl font-medium
                              leading-5 text-[var(--color-text-primary_60)]">
             <FaYoutube className="m-1" />
-            <span className="text-xs text-[var(--color-slate-400)]">Ver en YouTube</span>
+            <span className="text-xs text-[var(--color-slate-400)]">{tUi('youtube-btn')}</span>
           </button>
         </Link>
 
@@ -71,7 +80,7 @@ export default function PlaylistCard({
                              px-3 py-1 text-xl font-medium
                              leading-5 text-[var(--color-text-primary_60)]">
             <FaSpotify className="m-1" />
-            <span className="text-xs text-[var(--color-slate-400)]">Escuchar en Spotify</span>
+            <span className="text-xs text-[var(--color-slate-400)]">{tUi('spotify-btn')}</span>
           </button>
         </Link>
 

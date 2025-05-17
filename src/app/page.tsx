@@ -3,22 +3,24 @@ import {getTranslations} from 'next-intl/server';
 
 export default async function Home() {
    
-   const t = await getTranslations('home');
+  const tHome = await getTranslations('home');
+  const tUi = await getTranslations('ui');
+
   return (
     <div className="relative z-10 flex flex-col items-start justify-center h-screen px-6 md:px-20">
       <h1 className="text-5xl md:text-6xl font-bold text-[var(--color-text-primary)] mb-4">
-        {t('welcome')} <span className="text-[var(--color-text-primary)]/70">chillspace</span>
+        {tHome('welcome')} <span className="text-[var(--color-text-primary)]/70">chillspace</span>
       </h1>
       <p className="font-mono text-lg md:text-xl text-[var(--color-slate-400)] mb-8 max-w-lg">
-        Tu refugio digital para relajarte, descubrir música y desconectar.
+       {tHome('description')}
       </p>
 
       <nav className="grid grid-cols-2 sm:grid-cols-5 gap-4">
         {[
-          { label: "Playlists", href: "/playlists" },
-          { label: "Productos", href: "/products" },
-          { label: "Chill Room", href: "/chillroom" },
-          { label: "Proposito de la web", href: "/about" },
+          { label: `${tUi('playlists')}`, href: "/playlists" },
+          { label: `${tUi('products')}`, href: "/products" },
+          { label: `${tUi('chillroom')}`, href: "/chillroom" },
+          { label: `${tUi('about')}`, href: "/about" },
         ].map((link) => (
           <Link
             key={link.href}

@@ -4,10 +4,10 @@ import PlaylistCarousel from "@/components/PlaylistCarousel";
 import BackButton from "@/components/BackButton";
 import type { Mood } from "@/lib/spotify/moods";
 import ResultDialog from "@/components/ResultDialog";
-
-
+import {useTranslations} from 'next-intl';
 
 export default function PlaylistsClient({ mood } : { mood : Mood }) {
+  const tUi = useTranslations('ui');
   const [showLoginDialog, setShowLoginDialog] = useState(false);
   const [saveResult, setSaveResult] = useState<"success"|"error"|null>(null);
 
@@ -25,19 +25,19 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
            {showLoginDialog && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded shadow-lg text-black">
-            <p>No estás autenticado en Spotify. ¿Deseas iniciar sesión?</p>
+            <p>{tUi('noLoggedMessage')}</p>
             <div className="mt-4 flex justify-end gap-2">
               <button
                 onClick={() => setShowLoginDialog(false)}
                 className="px-3 py-2 border rounded"
               >
-                Cancelar
+                {tUi('cancel')}
               </button>
               <button
                 onClick={() => (window.location.href = "/spotify-login")}
                 className="px-3 py-2 bg-green-500 text-white rounded"
               >
-                Iniciar sesión
+                {tUi('login')}
               </button>
             </div>
           </div>

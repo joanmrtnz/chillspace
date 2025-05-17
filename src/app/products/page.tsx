@@ -4,10 +4,16 @@ import { useEffect, useState } from "react";
 import products from "../../lib/products/products";
 import ProductCard from "@/app/products/ProductCard";
 import BackButton from "@/components/BackButton";
+import {useTranslations} from 'next-intl';
+
 
 export default function ProductsPage() {
   const itemsPerPage = 9; 
   const [currentPage, setCurrentPage] = useState(1);
+  const tPr = useTranslations('products');
+  const tUi = useTranslations('ui');
+
+
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -22,15 +28,14 @@ export default function ProductsPage() {
   return (
     <div className="bg-black/1 md:min-h-screen min-h-[80vh] pt-[100px] flex flex-col items-center justify-center text-left m-auto p-4 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
       <BackButton href="/" positionClass="absolute top-21 left-4" />  
-      <h1 className="text-3xl font-bold mb-6 text-center">Productos</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">{tPr('title')}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {currentProducts.map((product) => (
           <ProductCard
             key={product.id}
-            title={product.title}
+            id={product.id}
             image={product.image}
             productLink={product.productLink}
-            description={product.description}
             price={product.price}
           />
         ))}
@@ -43,10 +48,10 @@ export default function ProductsPage() {
           hover:bg-[var(--color-slate-200)]/20  border hover:border-[var(--color-text-primary_20)] border-[var(--color-text-primary_80)] 
           rounded disabled:opacity-50 disabled:hover:border-[var(--color-text-primary_80)] disabled:hover:bg-[var(--color-gray-100)]/30 disabled:cursor-not-allowed"
         >
-          Anterior
+          {tUi('previous')}
         </button>
        
-        <span className="text-sm px-2 py-2 text-[var(--color-slate-500)]">{currentPage} de {totalPages}</span>
+        <span className="text-sm px-2 py-2 text-[var(--color-slate-500)]">{currentPage} {tUi('of')} {totalPages}</span>
         <button
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
           disabled={currentPage === totalPages}
@@ -54,7 +59,7 @@ export default function ProductsPage() {
           hover:bg-[var(--color-slate-200)]/20  border hover:border-[var(--color-text-primary_20)] border-[var(--color-text-primary_80)] 
           rounded disabled:opacity-50 disabled:hover:border-[var(--color-text-primary_80)] disabled:hover:bg-[var(--color-gray-100)]/30 disabled:cursor-not-allowed"
         >
-          Siguiente
+          {tUi('next')}
         </button>
         </div>
     </div>

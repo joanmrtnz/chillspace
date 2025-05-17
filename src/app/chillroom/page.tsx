@@ -1,6 +1,10 @@
 import BackButton from "@/components/BackButton";
+import {getTranslations} from 'next-intl/server';
 
-export default function ChillRoomPage() {
+
+export default async function ChillRoomPage() {
+    const tCr = await getTranslations('chillroom');
+
 
   return (
     <div className="md:min-h-screen min-h-[80vh] flex flex-col  justify-center  px-6  m-auto p-4">
@@ -12,10 +16,10 @@ export default function ChillRoomPage() {
           <div
             className="flex items-center justify-center  text-white bg-[var(--color-text-primary_50)]
                    text-[1.25em] w-[125px] h-[125px] animate-expand overflow-hidden">
-            <span className="absolute text-transparent animate-words1">Inspira</span>
-            <span className="absolute text-transparent animate-words2">Aguanta</span>
-            <span className="absolute text-transparent animate-words3">Expira</span>
-            <span className="absolute text-transparent animate-words4">Aguanta</span>
+            <span className="absolute text-transparent animate-words1">{tCr('step1')}</span>
+            <span className="absolute text-transparent animate-words2">{tCr('step2')}</span>
+            <span className="absolute text-transparent animate-words3">{tCr('step3')}</span>
+            <span className="absolute text-transparent animate-words4">{tCr('step4')}</span>
           </div>
         </div>
       </div>
