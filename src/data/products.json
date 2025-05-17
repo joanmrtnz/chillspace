@@ -1,98 +1,74 @@
 [
     {
       "id": 1,
-      "title": "Gafas de bloqueo de luz azul",
       "image": "/images/blue-light-glasses.jpg",
       "productLink": "https://amzn.eu/d/dSFouPg",
-      "description": "Gafas que bloquean la luz azul de pantallas para reducir la fatiga ocular y mejorar el descanso.",
       "price": "25,98€"
     },
     {
       "id": 2,
-      "title": "Vinylchill: Jazzy / Various",
       "image": "/images/vinylchill.jpg",
       "productLink": "https://amzn.eu/d/6clFBad",
-      "description": "Vinilo de jazz suave ideal para ambientar espacios relajantes con un toque elegante y nostálgico.",
       "price": "20,99€"
     },
     {
       "id": 3,
-      "title": "Gominolas de Ashwagandha",
       "image": "/images/ashwagandha-gummies.jpg",
       "productLink": "https://amzn.eu/d/cf2agXZ",
-      "description": "Para el estrés y la relajación. Con Gaba, Rhodiola y Vitaminas B6 y B12",
       "price": "15,25€"
     },
     {
         "id": 4,
-        "title": "Yogi Juguete antiestrés",
         "image": "/images/antistress-toy.jpg",
         "productLink": "https://amzn.eu/d/cs4SUj5",
-        "description": "Anillo anti-ansiedad extremadamente divertido.",
         "price": "19,19€"
       },
       {
         "id": 5,
-        "title": "Finoly Libro Mandalas Colorear",
         "image": "/images/mandalas-book.jpg",
         "productLink": "https://amzn.eu/d/irCLNVv",
-        "description": "Puede ayudarte a alejarte de los dispositivos electrónicos y proporcionarte paz interior.",
         "price": "10,99€"
       },
       {
         "id": 6,
-        "title": "Cascos Inalámbricos Cancelación de Ruido Activa",
         "image": "/images/headphones.jpg",
         "productLink": "https://amzn.eu/d/6BWxLHo",
-        "description": "Auriculares Bluetooth con cancelación activa de ruido para una escucha inmersiva y sin distracciones.",
         "price": "39,99€"
       },
       {
         "id": 7,
-        "title": "Humidificador de aceites y Lámpara de sal",
         "image": "/images/humidifier.jpg",
         "productLink": "https://amzn.eu/d/0WDvESr",
-        "description": "Lámpara de sal con difusor de aceites esenciales que crea un ambiente cálido y relajante ideal para descansar.",
         "price": "49,99€"
       },
       {
         "id": 8,
-        "title": "Magicteam Máquina de ruido blanco",
         "image": "/images/white-noise-machine.jpg",
         "productLink": "https://amzn.eu/d/dwjr1x2",
-        "description": "Máquina de ruido blanco con sonidos calmantes que favorecen el sueño profundo en bebés y adultos.",
         "price": "35,59€"
       },
       {
         "id": 9,
-        "title": "Colchón de Masaje eléctrico",
         "image": "/images/electric-massage-mattress.jpg",
         "productLink": "https://amzn.eu/d/cUzoH8B",
-        "description": "Colchón de masaje eléctrico con calor integrado para aliviar la tensión muscular y promover una relajación total.",
         "price": "79,99€"
       },
       {
         "id": 10,
-        "title": "Masajeador de ojos con calor",
         "image": "/images/eye-massager.jpg",
         "productLink": "https://amzn.eu/d/57i3y9t",
-        "description": "Masajeador ocular con calor, vibración y música Bluetooth para aliviar la fatiga visual y relajar cuerpo y mente.",
         "price": "52,69€"
       },
       {
         "id": 11,
-        "title": "Masajeador de Pies con Control Remoto",
         "image": "/images/foot-massager.jpg",
         "productLink": "https://amzn.eu/d/3DQkHng",
-        "description": "Masajeador de pies eléctrico con calor, compresión de aire y rodillos shiatsu para una experiencia de relax en casa u oficina.",
         "price": "119,99€"
       },
       {
         "id": 12,
-        "title": "Aceites Esenciales para Humidificador",
         "image": "/images/essential-oils.jpg",
         "productLink": "https://amzn.eu/d/fg06vK4",
-        "description": "Set de aceites esenciales florales 100% naturales, ideal para difusores y crear un ambiente relajante y aromático.",
         "price": "11,84€"
       }
   ]

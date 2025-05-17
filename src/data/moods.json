@@ -8,7 +8,6 @@
           "id": 1,
           "title": "Vibes Felices",
           "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
-          "description": "Temas alegres y energéticos para levantar el ánimo.",
           "genres": ["Pop", "Dance", "Electrónica"],
           "spotifyLink": "https://open.spotify.com/playlist/XYZ",
           "youtubeLink": "https://www.youtube.com/watch?v=ABC",
@@ -21,7 +20,6 @@
           "id": 2,
           "title": "Buen Rollo",
           "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
-          "description": "Éxitos indie y pop para mantener el buen humor.",
           "genres": ["Indie", "Pop"],
           "spotifyLink": "https://open.spotify.com/playlist/XYZ2",
           "youtubeLink": "https://www.youtube.com/watch?v=DEF",
@@ -34,7 +32,6 @@
           "id": 3,
           "title": "Sonrisas Musicales",
           "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
-          "description": "Melodías optimistas para sonreír durante todo el día.",
           "genres": ["Acoustic", "Folk", "Pop"],
           "spotifyLink": "https://open.spotify.com/playlist/XYZ3",
           "youtubeLink": "https://www.youtube.com/watch?v=GHI",
@@ -47,7 +44,6 @@
           "id": 7,
           "title": "Lágrimas Sonoras",
           "image": "https://i1.sndcdn.com/artworks-000555002412-054ojp-t500x500.jpg",
-          "description": "Canciones emotivas para acompañar momentos.",
           "genres": ["Ballad", "Acoustic"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -60,7 +56,6 @@
           "id": 8,
           "title": "Melancolía",
           "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
-          "description": "Tonadas melancólicas que llegan al corazón.",
           "genres": ["Indie", "Sadcore"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -73,7 +68,6 @@
           "id": 9,
           "title": "Soledad",
           "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
-          "description": "Piezas introspectivas para momentos de soledad.",
           "genres": ["Ambient", "Instrumental"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -90,10 +84,9 @@
       "name": "Relajado",
       "playlists": [
         {
-          "id": 4,
+          "id": 10,
           "title": "Paz Mental",
           "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
-          "description": "Melodías relajantes para tu yo interior.",
           "genres": ["Ambient", "Chillout"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -103,10 +96,9 @@
           ]
         },
         {
-          "id": 5,
+          "id": 11,
           "title": "Zen Total",
           "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
-          "description": "Sonidos para centrar la mente.",
           "genres": ["Ambient", "Meditation", "New Age"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -116,10 +108,9 @@
           ]
         },
         {
-          "id": 6,
+          "id": 12,
           "title": "Sueños Sonoros",
           "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
-          "description": "Ritmos tranquilos ideales para un viaje sonoro reparador.",
           "genres": ["Lofi", "Jazz"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -136,10 +127,9 @@
       "name": "Triste",
       "playlists": [
         {
-          "id": 7,
+          "id": 13,
           "title": "Lágrimas Sonoras",
           "image": "https://i1.sndcdn.com/artworks-000555002412-054ojp-t500x500.jpg",
-          "description": "Canciones emotivas para acompañar momentos .",
           "genres": ["Ballad", "Acoustic"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -149,10 +139,9 @@
           ]
         },
         {
-          "id": 8,
+          "id": 14,
           "title": "Melancolía",
           "image": "https://i.scdn.co/image/ab67616d0000b273e549b9c93ecfd33a403ec0bb",
-          "description": "Tonadas melancólicas que llegan al corazón.",
           "genres": ["Indie", "Sadcore"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
@@ -162,10 +151,9 @@
           ]
         },
         {
-          "id": 9,
+          "id": 15,
           "title": "Soledad",
           "image": "https://i1.sndcdn.com/artworks-000475254042-hoayzq-t500x500.jpg",
-          "description": "Piezas introspectivas para momentos de soledad.",
           "genres": ["Ambient", "Instrumental"],
           "spotifyLink": "https://open.spotify.com/playlist/JKL",
           "youtubeLink": "https://www.youtube.com/watch?v=MNO",
