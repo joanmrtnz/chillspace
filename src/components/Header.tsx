@@ -22,11 +22,11 @@ export default function Header() {
           <img
             src="/chillspace-logo.png"
             alt="chillspace logo"
-            className="h-[2.5rem] my-2"
+            className="h-[2rem] my-2"
           />
         </Link>
 
-        <ul className="hidden md:flex items-center space-x-1 ml-auto">
+        <ul className="hidden md:flex items-center space-x-0 ml-4">
           <Link href="/" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
              {tUi('home')}
           </Link>
@@ -43,7 +43,7 @@ export default function Header() {
             {tUi('about')}
           </Link>
         
-          <div className="hidden md:flex items-center gap-2 ml-4">
+          <div className="hidden md:flex items-center gap-2 ml-2">
             <LanguageSelect />
           </div>
           <Link href="/spotify-login">
@@ -74,7 +74,7 @@ export default function Header() {
           <img
             src="/chillspace-logo.png"
             alt="chillspace logo"
-            className="absolute top-5 left-4 max-h-[2.5rem]" />
+            className="absolute top-5 left-4 max-h-[2rem]" />
         </Link>
         <Link href="/spotify-login" className="mt-20 bg-black/5 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
