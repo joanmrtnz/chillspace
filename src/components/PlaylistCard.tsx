@@ -11,7 +11,6 @@ export default function PlaylistCard({
   id,
   title,
   image,
-  description,
   genres,
   spotifyLink,
   youtubeLink,
@@ -23,7 +22,6 @@ export default function PlaylistCard({
   id: number,
   title: string
   image: string
-  description: string
   genres: string[]
   spotifyLink: string
   youtubeLink: string

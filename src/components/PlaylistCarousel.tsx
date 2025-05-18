@@ -9,7 +9,6 @@ interface Playlist {
   id: number;
   title: string;
   image: string;
-  description: string;
   genres: string[];
   spotifyLink: string;
   youtubeLink: string;
