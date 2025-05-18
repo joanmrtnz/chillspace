@@ -24,7 +24,7 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
       </div>
            {showLoginDialog && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded shadow-lg text-black">
+          <div className="bg-white p-6 rounded shadow-lg text-black m-2 md:m-0">
             <p>{tUi('noLoggedMessage')}</p>
             <div className="mt-4 flex justify-end gap-2">
               <button
