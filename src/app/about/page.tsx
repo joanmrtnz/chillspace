@@ -49,7 +49,7 @@ export default function AboutPage() {
                         href="https://github.com/joanmrtnz"
                         target="_blank">
                         <img
-                            src="/images/about.jpg"
+                            src="/images/about/about.jpg"
                             alt="Joan Martínez"
                             className="w-80 h-80 rounded-full object-cover shadow-lg opacity-85"
                         />

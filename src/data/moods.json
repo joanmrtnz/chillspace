@@ -7,7 +7,7 @@
       {
         "id": 1,
         "title": "Watermelon Sugar",
-        "image": "/images/happy-1.png",
+        "image": "/images/playlists/happy-1.png",
         "genres": [
           "Pop",
           "Dance",
@@ -26,7 +26,7 @@
       {
         "id": 2,
         "title": "Good Vibes",
-        "image": "/images/happy-2.png",
+        "image": "/images/playlists/happy-2.png",
         "genres": [
           "Indie",
           "Pop"
@@ -61,7 +61,7 @@
       {
         "id": 3,
         "title": "Scroll on Pinterest",
-        "image": "/images/happy-3.png",
+        "image": "/images/playlists/happy-3.png",
         "genres": [
           "Acoustic",
           "Folk",
@@ -82,7 +82,7 @@
       {
         "id": 4,
         "title": "UR Just Happy",
-        "image": "/images/happy-4.png",
+        "image": "/images/playlists/happy-4.png",
         "genres": [
           "Speed Up",
           "Funk",
@@ -124,7 +124,7 @@
       {
         "id": 10,
         "title": "Lo-fi Rain",
-        "image": "/images/relaxed-1.png",
+        "image": "/images/playlists/relaxed-1.png",
         "genres": [
           "Ambient",
           "Chillout"
@@ -184,7 +184,7 @@
       {
         "id": 11,
         "title": "Ultimate Lo-fi",
-        "image": "/images/relaxed-2.png",
+        "image": "/images/playlists/relaxed-2.png",
         "genres": [
           "Ambient",
           "Meditation",
@@ -245,7 +245,7 @@
       {
         "id": 12,
         "title": "Lo-fi for study",
-        "image": "/images/relaxed-3.png",
+        "image": "/images/playlists/relaxed-3.png",
         "genres": [
           "Lofi",
           "Jazz"
@@ -305,7 +305,7 @@
       {
         "id": 13,
         "title": "Lo-fi Chill Rain",
-        "image": "/images/relaxed-4.png",
+        "image": "/images/playlists/relaxed-4.png",
         "genres": [
           "Lofi",
           "Jazz"
@@ -372,7 +372,7 @@
       {
         "id": 13,
         "title": "Deep Ambient",
-        "image": "/images/sad-1.png",
+        "image": "/images/playlists/sad-1.png",
         "genres": [
           "Ballad",
           "Acoustic"
@@ -485,7 +485,7 @@
       {
         "id": 14,
         "title": "Solitude",
-        "image": "/images/sad-2.png",
+        "image": "/images/playlists/sad-2.png",
         "genres": [
           "Sad Jazz",
           "Trumpet"
@@ -518,7 +518,7 @@
       {
         "id": 15,
         "title": "The Pain",
-        "image": "/images/sad-3.png",
+        "image": "/images/playlists/sad-3.png",
         "genres": [
           "Ambient",
           "Instrumental"
@@ -544,7 +544,7 @@
       {
         "id": 16,
         "title": "Classical Melancholy",
-        "image": "/images/sad-4.png",
+        "image": "/images/playlists/sad-4.png",
         "genres": [
           "Ambient",
           "Instrumental"

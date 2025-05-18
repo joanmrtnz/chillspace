@@ -20,7 +20,7 @@ export default async function RootLayout({
         <div className="relative min-h-screen bg-black">
           <NextIntlClientProvider>
             <Image
-              src="/images/home.jpg"
+              src="/images/home/home.jpg"
               alt="mountain"
               fill
               className="object-cover z-0"

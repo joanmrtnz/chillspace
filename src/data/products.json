@@ -1,73 +1,73 @@
 [
     {
       "id": 1,
-      "image": "/images/blue-light-glasses.jpg",
+      "image": "/images/products/blue-light-glasses.jpg",
       "productLink": "https://amzn.eu/d/dSFouPg",
       "price": "25,98€"
     },
     {
       "id": 2,
-      "image": "/images/vinylchill.jpg",
+      "image": "/images/products/vinylchill.jpg",
       "productLink": "https://amzn.eu/d/6clFBad",
       "price": "20,99€"
     },
     {
       "id": 3,
-      "image": "/images/ashwagandha-gummies.jpg",
+      "image": "/images/products/ashwagandha-gummies.jpg",
       "productLink": "https://amzn.eu/d/cf2agXZ",
       "price": "15,25€"
     },
     {
         "id": 4,
-        "image": "/images/antistress-toy.jpg",
+        "image": "/images/products/antistress-toy.jpg",
         "productLink": "https://amzn.eu/d/cs4SUj5",
         "price": "19,19€"
       },
       {
         "id": 5,
-        "image": "/images/mandalas-book.jpg",
+        "image": "/images/products/mandalas-book.jpg",
         "productLink": "https://amzn.eu/d/irCLNVv",
         "price": "10,99€"
       },
       {
         "id": 6,
-        "image": "/images/headphones.jpg",
+        "image": "/images/products/headphones.jpg",
         "productLink": "https://amzn.eu/d/6BWxLHo",
         "price": "39,99€"
       },
       {
         "id": 7,
-        "image": "/images/humidifier.jpg",
+        "image": "/images/products/humidifier.jpg",
         "productLink": "https://amzn.eu/d/0WDvESr",
         "price": "49,99€"
       },
       {
         "id": 8,
-        "image": "/images/white-noise-machine.jpg",
+        "image": "/images/products/white-noise-machine.jpg",
         "productLink": "https://amzn.eu/d/dwjr1x2",
         "price": "35,59€"
       },
       {
         "id": 9,
-        "image": "/images/electric-massage-mattress.jpg",
+        "image": "/images/products/electric-massage-mattress.jpg",
         "productLink": "https://amzn.eu/d/cUzoH8B",
         "price": "79,99€"
       },
       {
         "id": 10,
-        "image": "/images/eye-massager.jpg",
+        "image": "/images/products/eye-massager.jpg",
         "productLink": "https://amzn.eu/d/57i3y9t",
         "price": "52,69€"
       },
       {
         "id": 11,
-        "image": "/images/foot-massager.jpg",
+        "image": "/images/products/foot-massager.jpg",
         "productLink": "https://amzn.eu/d/3DQkHng",
         "price": "119,99€"
       },
       {
         "id": 12,
-        "image": "/images/essential-oils.jpg",
+        "image": "/images/products/essential-oils.jpg",
         "productLink": "https://amzn.eu/d/fg06vK4",
         "price": "11,84€"
       }
