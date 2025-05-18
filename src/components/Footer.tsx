@@ -13,6 +13,7 @@ export default async function Footer() {
                 <div className="flex-1 min-w-[150px] mb-6 sm:mb-0 text-left">
                     <h4 className="text-md font-semibold mb-3">{tF('links')}</h4>
                     <ul className="space-y-1 text-sm">
+                        <li><a href="/" className="hover:underline">{tUi('home')}</a></li>
                         <li><a href="/playlists" className="hover:underline">{tUi('playlists')}</a></li>
                         <li><a href="/chillroom" className="hover:underline">{tUi('chillroom')}</a></li>
                         <li><a href="/products" className="hover:underline">{tUi('products')}</a></li>

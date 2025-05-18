@@ -27,6 +27,9 @@ export default function Header() {
         </Link>
 
         <ul className="hidden md:flex items-center space-x-1 ml-auto">
+          <Link href="/" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
+             {tUi('home')}
+          </Link>
           <Link href="/playlists" className="text-[var(--color-slate-400)] hover:text-[var(--color-text-primary)] px-5 py-2.5">
              {tUi('playlists')}
           </Link>
@@ -81,6 +84,10 @@ export default function Header() {
           flex justify-start md:hidden">
             <LanguageSelect />
         </div>
+        <Link href="/" className="bg-white/30 text-[var(--color-slate-400)]
+         px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
+          {tUi('home')}
+        </Link>
         <Link href="/about" className="bg-white/30 text-[var(--color-slate-400)]
          px-4 py-2 rounded-md w-full transition" onClick={() => setMenuOpen(false)}>
           {tUi('about')}
