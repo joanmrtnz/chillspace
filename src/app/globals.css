@@ -36,6 +36,10 @@
   --color-green-500_10: rgba(60, 179, 113, 0.1);
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   background-color: var(--color-bg-default);
   color: var(--color-text-primary);

@@ -38,7 +38,8 @@ export default function LanguageSelect() {
         <ListboxButton
           disabled={isPending}
           className="inline-flex items-center gap-2  hover:text-[var(--color-slate-700)]/80 bg-opacity-40 
-             md:bg-[var(--color-gray-100)]/30 md:rounded-lg md:px-5 md:py-3.5 rounded-md px-4 py-2"
+             md:bg-[var(--color-gray-100)]/30 md:rounded-lg md:px-5 md:py-3.5 rounded-md px-4 py-2
+             focus:outline-none focus:ring-0 border-none transition"
         >
           <HiOutlineGlobeAlt className="size-4 fill-white/60" />
           {locales[selected]}
@@ -47,15 +48,15 @@ export default function LanguageSelect() {
         <ListboxOptions
           anchor="bottom end"
           transition
-          className="z-50 w-full md:w-40 md:origin-top-right rounded-xl bg-white/90 md:bg-white/30 border border-white/30 
-          p-1 text-md text-[var(--color-text-primary)] duration-100 ease-out data-closed:scale-95 data-closed:opacity-0 focus:outline-none"
+          className="absolute z-50 top-full left-0 mt-1 w-full md:w-40  rounded-xl bg-white/90 
+          md:bg-white/30  p-1 text-md text-[var(--color-text-primary)] duration-100 
+          ease-out focus:outline-none focus:ring-0 border-none"
         >
           {(Object.keys(locales) as Locale[]).map((lng) => (
             <ListboxOption
               key={lng}
               value={lng}
-              className="group flex w-full items-center justify-between gap-2 rounded-lg px-3 py-1.5
-                         data-focus:bg-black/1"
+              className="group flex w-full items-center justify-between gap-2 rounded-lg px-3 py-1.5"
             >
               {({selected: isSel}) => (
                 <>
