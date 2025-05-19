@@ -36,8 +36,8 @@ export default function PlaylistCard({
 
 
   return (
-    <div className="w-full backdrop-blur-lg bg-[var(--color-black)]/5 rounded-xl p-4 sm:p-10
-                    shadow-lg group">
+    <div className="w-full backdrop-blur-lg bg-[var(--color-black)]/5 rounded-xl p-6 sm:p-8
+                    shadow-md group">
       <div className="overflow-hidden rounded-md mb-3"> 
         <img
           src={image}

@@ -11,7 +11,7 @@ export default function AboutPage() {
 
 
     return (
-        <section className="bg-black/1 md:min-h-screen min-h-[180vh] flex flex-col items-center justify-center text-[var(--color-text-primary)] px-6 py-16">
+        <section className="bg-black/1 md:min-h-screen pt-[120px] flex flex-col items-center justify-center text-[var(--color-text-primary)] px-6 py-16">
             <BackButton href="/" positionClass="absolute top-21 left-4" />  
             <div className="max-w-4xl w-full grid gap-12 md:grid-cols-2 items-center">
                 <div className="space-y-8">

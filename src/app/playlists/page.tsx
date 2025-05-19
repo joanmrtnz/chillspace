@@ -10,7 +10,7 @@ export default function MoodSelector() {
   const tPl = useTranslations('playlists');
 
   return (
-    <div className="bg-black/1 flex flex-col items-center justify-center md:min-h-screen min-h-[135vh]">
+    <div className="bg-black/1 flex flex-col items-center justify-center min-h-[90vh] pt-[100px] ">
       <BackButton href="/" positionClass="absolute top-21 left-4" />  
 
        <div className="bg-white/30 text-center text-[var(--color-slate-400)] px-10 py-6 rounded-md transition space-y-6">
