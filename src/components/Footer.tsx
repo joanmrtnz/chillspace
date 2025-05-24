@@ -26,7 +26,7 @@ export default async function Footer() {
                     <ul className="space-y-1 text-sm">
                         <li>
                             <a
-                                href="https://github.com/joanmrtnz"
+                                href="https://github.com/joanmrtnz/chillspace"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:underline"
