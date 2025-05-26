@@ -28,7 +28,7 @@ export default function ResultDialog({
                         ) : (
                             <TbMoodSad className="text-2xl" />
                         )}  
-                        {isSuccess ? `${tUi('playlist-saved')}` : `${tUi('playlist-not-saved')}`}
+                        {isSuccess ? `${tUi('playlist-followed')}` : `${tUi('playlist-not-followed')}`}
                     </div>
                 </div>
 
