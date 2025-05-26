@@ -9,7 +9,7 @@ import {useTranslations} from 'next-intl';
 export default function PlaylistsClient({ mood } : { mood : Mood }) {
   const tUi = useTranslations('ui');
   const [showLoginDialog, setShowLoginDialog] = useState(false);
-  const [saveResult, setSaveResult] = useState<"success"|"error"|null>(null);
+  const [followResult, setFollowResult] = useState<"success"|"error"|null>(null);
 
 
   return (
@@ -19,7 +19,7 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
         <PlaylistCarousel
           playlists={mood.playlists}
           onRequireLogin={() => setShowLoginDialog(true)}
-          onSaveResult={setSaveResult}
+          onFollowResult={setFollowResult}
         />
       </div>
            {showLoginDialog && (
@@ -43,7 +43,7 @@ export default function PlaylistsClient({ mood } : { mood : Mood }) {
           </div>
         </div>
       )}
-      <ResultDialog type={saveResult} onClose={() => setSaveResult(null)} />
+      <ResultDialog type={followResult} onClose={() => setFollowResult(null)} />
     </div>
   );
 }

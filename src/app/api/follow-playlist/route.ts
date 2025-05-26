@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
-import { savePlaylistFlow } from "../../../lib/spotify/playlists";
+import { followPlaylistFlow } from "../../../lib/spotify/playlists";
 
 export async function POST(req: NextRequest) {
   const cookieStore = cookies();
@@ -23,10 +23,10 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const result = await savePlaylistFlow(accessToken, playlistId);
+    const result = await followPlaylistFlow(accessToken, playlistId);
     return NextResponse.json({ success: true, result });
   } catch (err) {
-    console.error("Error al guardar la playlist:", err);
-    return NextResponse.json({ error: "Algo falló al crear la playlist" }, { status: 500 });
+    console.error("Error al seguir la playlist:", err);
+    return NextResponse.json({ error: "Algo falló al seguir la playlist" }, { status: 500 });
   }
 }

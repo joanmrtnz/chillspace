@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import SavePlaylistButton from "./SavePlaylistButton";
+import FollowPlaylistButton from "./FollowPlaylistButton";
 import { FaSpotify, FaYoutube } from "react-icons/fa";
 import {useTranslations} from 'next-intl';
 
@@ -16,7 +16,7 @@ export default function PlaylistCard({
   spotifyLink,
   youtubeLink,
  onRequireLogin,
- onSaveResult,
+ onFollowResult,
   
 }: {
   id: number,
@@ -27,7 +27,7 @@ export default function PlaylistCard({
   spotifyLink: string
   youtubeLink: string
   onRequireLogin: () => void
-  onSaveResult: (r: "success" | "error") => void;
+  onFollowResult: (r: "success" | "error") => void;
 }) {
 
   const tUi = useTranslations('ui');
@@ -83,7 +83,7 @@ export default function PlaylistCard({
         </Link>
 
         <div className="flex-1 flex items-center">
-          <SavePlaylistButton playlistId={playlistId}  onRequireLogin={onRequireLogin} onSaveResult={onSaveResult}/>
+          <FollowPlaylistButton playlistId={playlistId}  onRequireLogin={onRequireLogin} onFollowResult={onFollowResult}/>
         </div>
       </div>
     </div>

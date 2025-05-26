@@ -34,7 +34,7 @@ export async function getCurrentUserId(accessToken: string) {
 
   }
   
-  export async function savePlaylistFlow(
+  export async function followPlaylistFlow(
     accessToken: string,
     playlistId: string,
     

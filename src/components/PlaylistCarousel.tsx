@@ -15,10 +15,10 @@ interface Playlist {
   youtubeLink: string;
 }
 
-export default function PlaylistCarousel({ playlists, onRequireLogin, onSaveResult } : { 
+export default function PlaylistCarousel({ playlists, onRequireLogin, onFollowResult } : { 
     playlists: Playlist[]; 
     onRequireLogin: () => void;
-    onSaveResult: (r: "success" | "error") => void; }){
+    onFollowResult: (r: "success" | "error") => void; }){
   return (
     <Swiper
       modules={[Navigation]}
@@ -34,7 +34,7 @@ export default function PlaylistCarousel({ playlists, onRequireLogin, onSaveResu
         <SwiperSlide key={pl.id}>
           <PlaylistCard {...pl} 
           onRequireLogin={onRequireLogin}
-          onSaveResult={onSaveResult} />
+          onFollowResult={onFollowResult} />
         </SwiperSlide>
       ))}
     </Swiper>
