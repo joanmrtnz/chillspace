@@ -7,12 +7,12 @@ import PlaylistCard from "./PlaylistCard";
 
 interface Playlist {
   id: number;
+  playlistId: string;
   title: string;
   image: string;
   genres: string[];
   spotifyLink: string;
   youtubeLink: string;
-  uris: string[];
 }
 
 export default function PlaylistCarousel({ playlists, onRequireLogin, onSaveResult } : { 

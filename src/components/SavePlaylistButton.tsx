@@ -5,8 +5,8 @@ import { IoAddCircle } from "react-icons/io5";
 import {useTranslations} from 'next-intl';
 
 
-export default function SavePlaylistButton({ playlistName, uris, onRequireLogin, onSaveResult }:
-   { playlistName: string; uris: string[], onRequireLogin: () => void, onSaveResult: (r: "success" | "error") => void; }) {
+export default function SavePlaylistButton({ playlistId, onRequireLogin, onSaveResult }:
+   { playlistId: string; onRequireLogin: () => void, onSaveResult: (r: "success" | "error") => void; }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const t = useTranslations('ui');
 
@@ -25,7 +25,7 @@ export default function SavePlaylistButton({ playlistName, uris, onRequireLogin,
      const res = await fetch("/api/save-playlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ playlistName, uris }),
+        body: JSON.stringify({ playlistId }),
       });
 
       const { success } = await res.json();

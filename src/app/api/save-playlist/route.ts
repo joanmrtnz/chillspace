@@ -17,14 +17,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Error al leer el cuerpo de la solicitud" }, { status: 400 });
   }
 
-  const { playlistName, uris } = body;
-  if (!playlistName || !uris || !Array.isArray(uris)) {
-    return NextResponse.json({ error: "Faltan parámetros: playlistName y uris deben estar definidos" }, { status: 400 });
+  const { playlistId } = body;
+  if (!playlistId) {
+    return NextResponse.json({ error: "Faltan parámetros: playlistId debe estar definido" }, { status: 400 });
   }
 
   try {
-    const playlistId = await savePlaylistFlow(accessToken, playlistName, uris);
-    return NextResponse.json({ success: true, playlistId });
+    const result = await savePlaylistFlow(accessToken, playlistId);
+    return NextResponse.json({ success: true, result });
   } catch (err) {
     console.error("Error al guardar la playlist:", err);
     return NextResponse.json({ error: "Algo falló al crear la playlist" }, { status: 500 });

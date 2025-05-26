@@ -9,23 +9,23 @@ import {useTranslations} from 'next-intl';
 
 export default function PlaylistCard({
   id,
+  playlistId,
   title,
   image,
   genres,
   spotifyLink,
   youtubeLink,
-  uris,
  onRequireLogin,
  onSaveResult,
   
 }: {
   id: number,
+  playlistId: string
   title: string
   image: string
   genres: string[]
   spotifyLink: string
   youtubeLink: string
-  uris: string[]
   onRequireLogin: () => void
   onSaveResult: (r: "success" | "error") => void;
 }) {
@@ -83,7 +83,7 @@ export default function PlaylistCard({
         </Link>
 
         <div className="flex-1 flex items-center">
-          <SavePlaylistButton playlistName={title} uris={uris}  onRequireLogin={onRequireLogin} onSaveResult={onSaveResult}/>
+          <SavePlaylistButton playlistId={playlistId}  onRequireLogin={onRequireLogin} onSaveResult={onSaveResult}/>
         </div>
       </div>
     </div>
