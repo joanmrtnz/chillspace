@@ -7,55 +7,39 @@ export async function getCurrentUserId(accessToken: string) {
     const data = await res.json();
     return data.id;
   }
-  
-  export async function createPlaylist(
+
+  export async function followPlaylist(
     accessToken: string,
-    userId: string,
-    name: string,
-    description = "Playlist creada desde Chill Space"
+    playlistId: string,
   ) {
-    const res = await fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
-      method: "POST",
+    const res = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/followers`, {
+      method: "PUT",
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name,
-        description,
         public: false,
       }),
     });
-    const data = await res.json();
-    return data.id;
-  }
-  
-  export async function addTracksToPlaylist(
-    accessToken: string,
-    playlistId: string,
-    trackUris: string[]
-  ) {
-    const res = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        uris: trackUris,
-      }),
-    });
-    return await res.json();
+
+    const text = await res.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      data = text;
+    }
+    return data;
+
   }
   
   export async function savePlaylistFlow(
     accessToken: string,
-    playlistName: string,
-    trackUris: string[]
+    playlistId: string,
+    
   ) {
-    const userId = await getCurrentUserId(accessToken);
-    const playlistId = await createPlaylist(accessToken, userId, playlistName);
-    await addTracksToPlaylist(accessToken, playlistId, trackUris);
+    await followPlaylist(accessToken, playlistId);
     return playlistId;
   }
   
