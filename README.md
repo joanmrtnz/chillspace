@@ -95,10 +95,10 @@ Chillspace es una aplicación de descubrimiento musical basada en tu estado de �
    Crea un archivo `.env` en la raíz con tus credenciales de Spotify:
 
    ```ini
-   NEXT_PUBLIC_SPOTIFY_CLIENT_ID=tu_cliente_id_spotify
-   NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET=tu_cliente_secreto_spotify
    NEXT_PUBLIC_SPOTIFY_REDIRECT_URI=http://localhost:3000/api/callback
-   NEXTAUTH_SECRET=una_cadena_segura_aleatoria
+   NEXT_PUBLIC_SPOTIFY_CLIENT_ID=tu_cliente_id_spotify
+   SPOTIFY_CLIENT_SECRET=tu_cliente_secreto_spotify
+   NODE_ENV=development
    ```
 4. **Ejecuta en desarrollo**
 
