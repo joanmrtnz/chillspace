@@ -2,111 +2,111 @@
 
 ## ![https://chillspace.app](./public/readme-images/logo.png)
 
-Chillspace es una aplicación de descubrimiento musical basada en tu estado de ánimo, construida con Next.js y la API Web de Spotify. Selecciona cómo te sientes y Chillspace te ofrecerá listas de reproducción cuidadosamente elegidas, además de una tienda curada de productos para la relajación y animaciones relajantes.
+Chillspace is a mood-based music discovery app built with Next.js and the Spotify Web API. Pick how you feel, and Chillspace will serve up carefully curated playlists, plus a curated shop of relaxation products and soothing animations.
 
 ---
 
-## Contenidos
+## Contents
 
-- [Demo en vivo](#demo-en-vivo)  
-- [Capturas](#capturas)  
-- [Funcionalidades](#funcionalidades)  
-- [Stack Tecnológico](#stack-tecnológico)  
-- [Resumen de Comandos / Scripts](#resumen-de-comandos--scripts)  
-- [Inicio Rápido](#inicio-rápido)  
-- [Estructura del Proyecto](#estructura-del-proyecto)  
-- [Datos e Internacionalización](#datos-e-internacionalización)  
-- [Integración con Spotify](#integración-con-spotify)  
-- [Resumen de Componentes](#resumen-de-componentes)  
-- [Contribuciones](#contribuciones)  
-- [Licencia](#licencia)
-
----
-
-## Demo en vivo
-
-☕ https://chillspace.app/
+* [Live Demo](#live-demo)
+* [Screenshots](#screenshots)
+* [Features](#features)
+* [Tech Stack](#tech-stack)
+* [Commands / Scripts Summary](#commands--scripts-summary)
+* [Quick Start](#quick-start)
+* [Project Structure](#project-structure)
+* [Data and Internationalization](#data-and-internationalization)
+* [Spotify Integration](#spotify-integration)
+* [Components Overview](#components-overview)
+* [Contributing](#contributing)
+* [License](#license)
 
 ---
 
-## Sneak peek
+## Live Demo
 
-![Pantalla Home](./public/readme-images/home.png)  
-*Página principal.*
-
-![Carrusel de playlists](./public/readme-images/playlists.png)  
-*Carrusel con listas según el mood “Relaxed”.*
-
-![Recomendación de productos](./public/readme-images/products.png)  
-*Página con productos relajantes recomendados.*
+☕ [https://chillspace.app/](https://chillspace.app/)
 
 ---
 
-## Funcionalidades
+## Screenshots
 
-* **Selección de estado de ánimo** mediante iconos (feliz, relajado, triste, etc.).  
-* **Carrusel de listas**: navega por playlists de Spotify según tu estado de ánimo, con imágenes, títulos y géneros.  
-* **Seguir listas**: botón para añadir una playlist a tu biblioteca de Spotify.  
-* **Enlaces externos**: abre las playlists en Spotify o YouTube.  
-* **Recomendaciones de tienda**: explora y compra productos con temática de relajación.  
-* **Internacionalización**: soporte en inglés, español y catalán gracias a `next-intl`.  
-* **Diseño responsivo**: maquetación mobile-first con Tailwind/PostCSS.  
-* **Autenticación**: flujo OAuth2 para iniciar sesión con Spotify.
+![Home Screen](./public/readme-images/home.png)
+*Home screen.*
 
----
+![Playlist Carousel](./public/readme-images/playlists.png)
+*Carousel displaying playlists for the “Relaxed” mood.*
 
-## Stack Tecnológico
-
-* **Next.js** 15 (estructura con carpeta `app/`)  
-* **React** 19 + **TypeScript**  
-* **next-intl** para i18n  
-* **Headless UI** & **react-icons** para componentes accesibles  
-* **Swiper** para el carrusel  
-* **Spotify Web API** para obtener estados de ánimo y listas  
-* Configuración lista para desplegar en **Vercel**
+![Product Recommendations](./public/readme-images/products.png)
+*Page showing recommended relaxation products.*
 
 ---
 
-## Resumen de Comandos / Scripts
+## Features
 
-| Script            | Descripción                      |
-|-------------------|----------------------------------|
-| `npm run dev`     | Ejecutar en modo desarrollo      |
-| `npm run build`   | Preparar build de producción     |
-| `npm start`       | Iniciar servidor en producción   |
+* **Mood selection** via icons (happy, relaxed, sad, etc.).
+* **Playlist carousel**: browse Spotify playlists by mood, complete with images, titles, and genres.
+* **Follow playlists**: button to add a playlist to your Spotify library.
+* **External links**: open playlists on Spotify or YouTube.
+* **Shop recommendations**: explore and purchase relaxation-themed products.
+* **Internationalization**: English, Spanish, and Catalan support via `next-intl`.
+* **Responsive design**: mobile-first layout with Tailwind/PostCSS.
+* **Authentication**: OAuth2 flow for logging in with Spotify.
 
 ---
 
-## Inicio Rápido
+## Tech Stack
 
-1. **Clona el repositorio**  
+* **Next.js** 15 (app/ folder structure)
+* **React** 19 + **TypeScript**
+* **next-intl** for i18n
+* **Headless UI** & **react-icons** for accessible components
+* **Swiper** for the carousel
+* **Spotify Web API** for fetching moods and playlists
+* Ready for deployment on **Vercel**
+
+---
+
+## Commands / Scripts Summary
+
+| Script          | Description                |
+| --------------- | -------------------------- |
+| `npm run dev`   | Run in development mode    |
+| `npm run build` | Prepare production build   |
+| `npm start`     | Start server in production |
+
+---
+
+## Quick Start
+
+1. **Clone the repository**
+
    ```bash
    git clone https://github.com/joanmrtnz/chillspace.git
    cd chillspace
-   ````
-
-2. **Instala dependencias**
+   ```
+2. **Install dependencies**
 
    ```bash
    npm install
-   # o yarn
+   # or yarn
    ```
-3. **Configura variables de entorno**
-   Crea un archivo `.env` en la raíz con tus credenciales de Spotify:
+3. **Configure environment variables**
+   Create a `.env` file in the root with your Spotify credentials:
 
    ```ini
    NEXT_PUBLIC_SPOTIFY_REDIRECT_URI=http://localhost:3000/api/callback
-   NEXT_PUBLIC_SPOTIFY_CLIENT_ID=tu_cliente_id_spotify
-   SPOTIFY_CLIENT_SECRET=tu_cliente_secreto_spotify
+   NEXT_PUBLIC_SPOTIFY_CLIENT_ID=your_spotify_client_id
+   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
    NODE_ENV=development
    ```
-4. **Ejecuta en desarrollo**
+4. **Run in development**
 
    ```bash
    npm run dev
    # → http://localhost:3000
    ```
-5. **Construye para producción**
+5. **Build for production**
 
    ```bash
    npm run build
@@ -115,40 +115,40 @@ Chillspace es una aplicación de descubrimiento musical basada en tu estado de �
 
 ---
 
-## Entorno y Despliegue
+## Environment and Deployment
 
-* **Vercel**: despliegues automáticos desde GitHub.
-* **Variables de entorno**: configúralas en el dashboard de Vercel o en tu propio hosting.
-* **Assets de imágenes**: bajo `/public/images` y `/public/icons`.
+* **Vercel**: automatic deployments from GitHub.
+* **Environment variables**: set them in the Vercel dashboard or your hosting provider.
+* **Image assets**: located under `/public/images` and `/public/icons`.
 
 ---
 
-## Estructura del Proyecto
+## Project Structure
 
-#### 1. Vista de alto nivel
+#### 1. High-level view
 
 ```bash
 .
-├── public/               ← assets estáticos (logos, iconos e imágenes)
-├── messages/             ← traducciones i18n (ca.json, en.json, es.json)
-├── src/                  ← código fuente de la aplicación
-├── next.config.ts        ← configuración de Next.js
-├── postcss.config.mjs    ← configuración de Tailwind/PostCSS
-├── package.json          ← dependencias y scripts
-├── README.md             ← esta documentación
-└── tsconfig.json         ← configuración de TypeScript
+├── public/               ← static assets (logos, icons, images)
+├── messages/             ← i18n translations (ca.json, en.json, es.json)
+├── src/                  ← application source code
+├── next.config.ts        ← Next.js configuration
+├── postcss.config.mjs    ← Tailwind/PostCSS configuration
+├── package.json          ← dependencies and scripts
+├── README.md             ← this documentation
+└── tsconfig.json         ← TypeScript configuration
 ```
 
-#### 2. Detalle de `src/`
+#### 2. `src/` details
 
 ```bash
 src/
 ├── actions/
-│   └── set-locale.ts            ← handler para cambiar idioma
+│   └── set-locale.ts            ← handler for changing locale
 ├── app/
-│   ├── layout.tsx               ← Layout global (Header, Footer, proveedor i18n…)
-│   ├── globals.css              ← Estilos globales
-│   ├── page.tsx                 ← `/` (home: selección de moods)
+│   ├── layout.tsx               ← global layout (Header, Footer, i18n provider…)
+│   ├── globals.css              ← global styles
+│   ├── page.tsx                 ← `/` (home: mood selector)
 │   ├── about/
 │   │   └── page.tsx             ← `/about`
 │   ├── spotify-login/
@@ -156,13 +156,13 @@ src/
 │   ├── chillroom/
 │   │   └── page.tsx             ← `/chillroom`
 │   ├── playlists/
-│   │   ├── page.tsx             ← `/playlists` (selector de mood)
-│   │   ├── loading.tsx          ← UI de carga para playlists
+│   │   ├── page.tsx             ← `/playlists` (mood selector)
+│   │   ├── loading.tsx          ← loading UI for playlists
 │   │   └── [mood]/
-│   │       ├── PlaylistsClient.tsx← cliente React para fetch
+│   │       ├── PlaylistsClient.tsx ← React client for fetch
 │   │       └── page.tsx         ← `/playlists/[mood]`
 │   └── products/
-│       ├── ProductCard.tsx      ← tarjeta de producto
+│       ├── ProductCard.tsx      ← product card component
 │       └── page.tsx             ← `/products`
 ├── components/
 │   ├── Header.tsx
@@ -174,72 +174,69 @@ src/
 │   ├── BackButton.tsx
 │   └── ResultDialog.tsx
 ├── data/
-│   ├── moods.json               ← definición de moods y playlists
-│   └── products.json            ← lista de productos para la tienda
+│   ├── moods.json               ← mood definitions (id, icon, name, playlists array)
+│   └── products.json            ← store products list (image path, Amazon link, price)
 ├── i18n/
-│   └── request.ts               ← cargador de locale para next-intl
+│   └── request.ts               ← locale loader for next-intl
 └── lib/
     ├── spotify/
-    │   ├── auth.ts              ← helpers OAuth de Spotify
-    │   ├── moods.ts             ← lectura de moods.json
-    │   └── playlists.ts         ← llamadas a Spotify Web API
+    │   ├── auth.ts              ← Spotify OAuth helpers
+    │   ├── moods.ts             ← read moods.json
+    │   └── playlists.ts         ← Spotify Web API calls for playlists
     └── products/
-        └── products.ts          ← lectura de products.json
+        └── products.ts          ← read products.json
 ```
 
 ---
 
-## Datos e Internacionalización
+## Data and Internationalization
 
 * **`src/data/moods.json`**
-  Define cada estado de ánimo (id, icono, nombre, array de playlists).
+  Defines each mood (id, icon, name, array of playlists).
 * **`src/data/products.json`**
-  Lista de productos de tienda (ruta de imagen, enlace de Amazon, precio).
+  List of store products (image path, Amazon link, price).
 * **`messages/[lang].json`**
-  Traducciones de UI para inglés (`en.json`), español (`es.json`) y catalán (`ca.json`).
+  UI translations for English (`en.json`), Spanish (`es.json`), and Catalan (`ca.json`).
 
 ---
 
-## Integración con Spotify
+## Spotify Integration
 
-1. **Autenticación OAuth** (`src/lib/spotify/auth.ts`)
+1. **OAuth Authentication** (`src/lib/spotify/auth.ts`)
 
-   * Genera la URL de autorización para Spotify.
-   * Procesa el callback, intercambia el código por un token de acceso y lo almacena.
+   * Generates the authorization URL for Spotify.
+   * Processes the callback, exchanges the code for an access token, and stores it.
 
-2. **Gestión de metadatos de estados de ánimo** (`src/lib/spotify/moods.ts`)
+2. **Mood Metadata Management** (`src/lib/spotify/moods.ts`)
 
-   * Lee `moods.json` para obtener los IDs de playlists y sus metadatos.
+   * Reads `moods.json` to obtain playlist IDs and their metadata.
 
-3. **Lógica de seguimiento de playlists**
+3. **Playlist Follow Logic**
 
-   * **Cliente UI** (`components/FollowPlaylistButton.tsx`):
-     Envía la petición al endpoint interno `/api/follow-playlist`.
-   * **Ruta API** (`src/app/api/follow-playlist/route.ts`):
-     Recibe `playlistId` y token de usuario. Llama a `followPlaylistFlow(playlistId, token)`.
-   * **Función de negocio** (`src/lib/spotify/playlists.ts`):
-     Implementa `followPlaylistFlow(playlistId, token)` que realiza la llamada a Spotify para “seguir” la playlist.
+   * **UI Client** (`components/FollowPlaylistButton.tsx`): Sends the request to the internal `/api/follow-playlist` endpoint.
+   * **API Route** (`src/app/api/follow-playlist/route.ts`): Receives `playlistId` and user token, then calls `followPlaylistFlow(playlistId, token)`.
+   * **Business Logic** (`src/lib/spotify/playlists.ts`): Implements `followPlaylistFlow(playlistId, token)`, which makes the call to Spotify to follow the playlist.
 
 ---
 
-## Resumen de Componentes
+## Components Overview
 
-* **`Header` / `Footer`**: navegación y selector de idioma.
-* **`LanguageSelect`**: dropdown para cambiar locales.
-* **`PlaylistCarousel`**: slider con Swiper y tarjetas de playlists.
-* **`PlaylistCard`**: muestra imagen, título, géneros y botones.
-* **`ResultDialog`**: modal para confirmar seguimiento o mostrar errores.
-
----
-
-## Contribuciones
-
-1. Haz fork del repositorio.
-2. Crea una rama para tu feature.
-3. Abre un Pull Request — incluye tests para nuevas funcionalidades.
+* **`Header` / `Footer`**: navigation and language selector.
+* **`LanguageSelect`**: dropdown for changing locales.
+* **`PlaylistCarousel`**: slider using Swiper with playlist cards.
+* **`PlaylistCard`**: displays image, title, genres, and action buttons.
+* **`ResultDialog`**: modal for confirming follows or showing errors.
 
 ---
 
-## Licencia
+## Contributing
 
-MIT © [joanmrtnz](https://github.com/joanmrtnz)
+1. Fork the repository.
+2. Create a branch for your feature.
+3. Open a Pull Request — include tests for new functionality.
+
+---
+
+## License
+
+MIT © [Joan Martínez](https://github.com/joanmrtnz)
