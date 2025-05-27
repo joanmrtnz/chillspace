@@ -1,6 +1,4 @@
-<!-- [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://vercel.com/joanmrtnzs-projects/chillspace)
-[![Build Status](https://github.com/joanmrtnz/chillspace/actions/workflows/ci.yml/badge.svg)](https://github.com/joanmrtnz/chillspace/actions)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Build Status](https://github.com/joanmrtnz/chillspace/actions/workflows/ci.yml/badge.svg)](https://github.com/joanmrtnz/chillspace/actions)
 
 ## ![https://chillspace.app](./public/readme-images/logo.png)
 
